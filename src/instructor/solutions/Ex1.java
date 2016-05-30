@@ -9,13 +9,13 @@ public class Ex1 {
 
     // Check if input is valid
     if (n <= 0) {
-      System.out.println("Invalud number. Only positive nos. allowed.");
+      System.out.println("Invalid number. Only positive nos. allowed.");
     } else {
       // Create a placeholder that will hold the result
       int currentProduct = 1;
 
       // When n becomes 1, stop the loop since x*1 = x
-      // n >= 1 stillo produce same result, but iterates with additional one (useless) step
+      // n >= 1 still produce same result, but iterates with additional one (useless) step
       while (n > 1) {
         // Start accumulation into currentProduct
         currentProduct = currentProduct * n;
