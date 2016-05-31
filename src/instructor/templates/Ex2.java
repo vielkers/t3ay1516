@@ -2,9 +2,15 @@ package instructor.templates;
 
 public class Ex2 {
   public static void main(String[] args) {
-    // Exercise 2.1
-    // Implement fibonacci sequence
-    int n = 9;
+    int a1 =0, a2 = 1, a3, i;
+    System.out.printf(a1 + " " + a2);
+    for (i=2; i<9;i++)
+    {
+      a3=a1 + a2;
+      System.out.printf(" " + a3);
+      a1=a2;
+      a2=a3;
+    }
     // Use x1 = 0, x2 = 1 as starting variables
         // x3 = 1
         // x4 = 2
