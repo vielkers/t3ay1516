@@ -2,6 +2,7 @@ package instructor.templates;
 
 public class Ex2 {
   public static void main(String[] args) {
+
     // Exercise 2.1
     // Implement fibonacci sequence
     int n = 9;
@@ -17,6 +18,7 @@ public class Ex2 {
         // 1. Use int variables and loop of your choice (for, while, do-while)
         // 2. Equation form: Xn = Xn-1 + Xn-2
         // 3. You may need a variable to (a) hold current sum or (b) change values of the x's
+
 
     // Exercise 2.2
     // Implement a primality test of numbers from 2 to maxNumber
