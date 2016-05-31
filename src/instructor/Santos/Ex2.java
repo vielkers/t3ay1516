@@ -18,18 +18,18 @@ public class Ex2 {
         // 2. Equation form: Xn = Xn-1 + Xn-2
         // 3. You may need a variable to (a) hold current sum or (b) change values of the x's
 
-          int x1=0,x2=1,n;
-          int fib =5;
-          for(n=2;n<fib;++n) {
-          int total = 0;
+          int n1=0,n2=1,n3,i,count=5;
+          System.out.print(n1+" "+n2);//printing 0 and 1
 
-            total = x1 +x2+total;
-            total++;
-            System.out.print(total);
+          for(i=2;i<count;++i)//loop starts from 2 because 0 and 1 are already printed
+             {
+              n3=n1+n2;
+              System.out.print(" "+n3);
+              n1=n2;
+              n2=n3;
+    }
 
-          }
-
-              }
+  }
 
     // Exercise 2.2
     // Implement a primality test of numbers from 2 to maxNumber
