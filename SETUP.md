@@ -8,8 +8,10 @@
 
 ## Cloning Your Fork
 Syntax:
+```
 git clone https://github.com/<username>/<repo-name>.git
 (The .git is optional)
+```
 
 Example:
 ```
