@@ -1,4 +1,4 @@
-package instructor.Santos;
+package anton.santos;
 
 public class Ex2 {
   public static void main(String[] args) {
