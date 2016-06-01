@@ -1,4 +1,4 @@
-package bato;
+package ryna.bato;
 
 public class Ex2 {
   public static void main(String[] args) {
