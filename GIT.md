@@ -24,11 +24,11 @@ git remote add upstream https://github.com/lbyiet1/t3ay1516.git
 ```
 git branch
 ```
-The current branch you are on is marked with asterisk and colored differently
 
 Things to Remember:
-1. NEVER edit the master branch
-2. Always remember which branch you are on
+* NEVER edit the master branch
+* Always remember which branch you are on
+* The current branch you are on is marked with asterisk and colored differently
 
 ## Switching to a Different Branch
 ```
@@ -54,7 +54,6 @@ git checkout -b ex3-reyes
 Always make the branch name short, but expressive of what you are going to code / program
 
 ## Committing Changes
-Notes:
 1. Committing means saving the changes to your LOCAL repository
   * The commits exist only on your computer
 2. Commits are written per branch, so make sure you know which branch you are currently on
