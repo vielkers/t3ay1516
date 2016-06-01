@@ -24,7 +24,7 @@ git remote add upstream https://github.com/lbyiet1/t3ay1516.git
 ```
 git branch
 ```
-* The current branch you are on is marked with asterisk and colored differently
+The current branch you are on is marked with asterisk and colored differently
 
 Things to Remember:
 1. NEVER edit the master branch
