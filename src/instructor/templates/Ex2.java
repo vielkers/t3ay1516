@@ -2,28 +2,9 @@ package instructor.templates;
 
 public class Ex2 {
   public static void main(String[] args) {
-
     // Exercise 2.1
     // Implement fibonacci sequence
-
-
-    int n = 9, x1 = 0, x2 = 1, xn, c;
-
-    for ( c = 0 ; c < n ; c++ )
-    {
-      if ( c <= 1 )
-        xn = c;
-      else
-      {
-        xn = x1 + x2;
-        x1 = x2;
-        x2 = xn;
-      }
-      System.out.println(xn);
-    }
-
-
-
+    int n = 9;
     // Use x1 = 0, x2 = 1 as starting variables
         // x3 = 1
         // x4 = 2
@@ -37,12 +18,9 @@ public class Ex2 {
         // 2. Equation form: Xn = Xn-1 + Xn-2
         // 3. You may need a variable to (a) hold current sum or (b) change values of the x's
 
-
     // Exercise 2.2
     // Implement a primality test of numbers from 2 to maxNumber
     int maxNumber = 1000;
-
-
     // A number x is prime iff x >= 2, and its only factors are 1 and itself
     // Tips:
         // 1. To check if a number d divides x: (x % d == 0)
