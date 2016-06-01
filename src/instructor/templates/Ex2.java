@@ -4,16 +4,19 @@ public class Ex2 {
   public static void main(String[] args) {
     // Exercise 2.1
     // Implement fibonacci sequence
-    int N = Integer.parseInt(args[0]);
-    int f = 0, g = 1;
-
-    for (int i = 1; i <= N; i++) {
-      f = f + g;
-      g = f - g;
-      System.out.println(f);
-    }
-  }
-}
+    int n = 9;
+    // Use x1 = 0, x2 = 1 as starting variables
+        // x3 = 1
+        // x4 = 2
+        // x5 = 3
+        // x6 = 5
+        // x7 = 8
+        // x8 = 13
+        // x9 = 21  (if n = 9, you should output 21)
+    // Tips:
+        // 1. Use int variables and loop of your choice (for, while, do-while)
+        // 2. Equation form: Xn = Xn-1 + Xn-2
+        // 3. You may need a variable to (a) hold current sum or (b) change values of the x's
 
     // Exercise 2.2
     // Implement a primality test of numbers from 2 to maxNumber
