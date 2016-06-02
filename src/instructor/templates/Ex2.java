@@ -1,11 +1,28 @@
 package instructor.templates;
 
+import java.util.Scanner;
+
 public class Ex2 {
   public static void main(String[] args) {
     // Exercise 2.1
     // Implement fibonacci sequence
-    int n = 9;
-    // Use x1 = 0, x2 = 1 as starting variables
+    int n = 1;
+    Scanner sc = new Scanner(System.in);
+    int prev, next, sum, count;
+    System.out.println("EXERCISE 2.1");
+    System.out.println("Fib series is until what number? ");
+    count=sc.nextInt();
+    prev=next=1;
+    System.out.println("Fib Series: ");
+    while (n<=count)
+    {
+      System.out.println(prev);
+      sum=prev+next;
+      prev=next;
+      next=sum;
+      n++;
+    }
+        // Use x1 = 0, x2 = 1 as starting variables
         // x3 = 1
         // x4 = 2
         // x5 = 3
@@ -21,6 +38,30 @@ public class Ex2 {
     // Exercise 2.2
     // Implement a primality test of numbers from 2 to maxNumber
     int maxNumber = 1000;
+    int i = 0;
+    int number = 0;
+    String primeNum = "";
+
+    for (i=1; i<=maxNumber ; i++)
+    {
+      int counter = 0;
+      for (number = i; number>=1; number--)
+      {
+        if(i%number==0)
+        {
+          counter = counter + 1;
+        }
+      }
+      if(counter==2)
+      {
+        primeNum = primeNum + i + " ";
+      }
+    }
+    System.out.println("================================================");
+    System.out.println("EXERCISE 2.2");
+    System.out.println("Defined variable maxNumber is " +maxNumber);
+    System.out.println("Prime numbers from 2 to " + maxNumber + " are:");
+    System.out.println(primeNum);
     // A number x is prime iff x >= 2, and its only factors are 1 and itself
     // Tips:
         // 1. To check if a number d divides x: (x % d == 0)
