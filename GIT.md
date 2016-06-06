@@ -78,3 +78,46 @@ Example:
 ```
 git commit -s -m "Implemented Ex1"
 ```
+
+## Pushing to Remote Repository
+1. Pushing to repository is on per branch basis
+  * It is possible to push all branches you have, but we won't be doing that
+2. Pushing means uploading commits that are not yet uploaded to the remote
+3. To push, you need to indicate the remote name, and the branch you want to push to it
+
+Syntax:
+```
+git push <remote> <branch>
+```
+
+Example:
+```
+git push origin master
+git push origin ex2-bibera
+```
+
+## Updating Your Origin With Upstream
+1. Your forked repository does not keep track of its upstream
+2. To update your forked repository, make sure you did not push to your repository's master branch
+3. Switch to master branch
+4. Fetch for the latest changes in the upstream repository
+
+```
+git fetch upstream master
+```
+
+5. Update your project to include the fetched changes
+
+```
+git rebase upstream/master
+```
+
+6. At this point, your local repository is now updated to match the remote upstream
+7. Push the master branch onto your remote repository
+
+```
+git push origin master
+```
+
+8. Your forked repository should now be on par with the upstream repository's master branch
+  * This is the only instance where you should push to your forked repository's master branch
