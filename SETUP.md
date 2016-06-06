@@ -28,5 +28,9 @@ git clone https://github.com/lbyiet1/t3ay1516.git
   1. Under Compiler Output, Select 'Use module compile output path'
   2. Ctrl + V on output path and test output path
   3. Add '/out' at the end of both output path and test output path
+    * For Windows, use '\out' instead (Windows use backslash instead of '/')
   4. Press Apply/Ok
 6. Configure which source code to run
+7. Press "Run" (The Play Button)
+  * Make sure all source code in the project are error-free, else the program will fail to run
+8. 
