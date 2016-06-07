@@ -8,7 +8,7 @@ public class Ex2 {
         // Exercise 2.1
         // Implement fibonacci sequence
 
-
+        System.out.println("EXERCISE 2.1");
         int n = 9, x1 = 0, x2 = 1, xn, c;
 
         for ( c = 0 ; c < n ; c++ )
@@ -42,22 +42,24 @@ public class Ex2 {
         // Exercise 2.2
         // Implement a primality test of numbers from 2 to maxNumber
         ;
-
-        int maxNumber = 1000;
-
-
-        for ( c = 2 ; c <= maxNumber - 1 ; c++ )
+        System.out.println("EXERCISE 2.2");
+        int prime, i =3, j;
         {
-            if ( maxNumber%c == 0 )
-            {
-                System.out.println(maxNumber + "is not prime");
-                break;
+            System.out.println("2");
+            for (i =3; i <= 1000; i++) {
+                prime = i;
+                for (j = 2; j <= (i - 1); j++) {
+                    if (i % j == 0) {
+                        prime = 0;
+                        break;
+                    }
+
+                    }
+                if (prime != 0) {
+                    System.out.println(prime);
+                }
             }
         }
-        if ( c == maxNumber )
-            System.out.println(maxNumber + "is not prime");
-
-
         // A number x is prime iff x >= 2, and its only factors are 1 and itself
         // Tips:
         // 1. To check if a number d divides x: (x % d == 0)
