@@ -5,10 +5,10 @@ public class Ex2 {
     // Exercise 2.1
     // Implement fibonacci seuqence
     int a1 = 0, a2 = 1, a3, i, n = 9;
-    System.out.printf(a1 + "  " + a2);
+    System.out.println(a1 + "  " + a2);
     for (i = 2; i < n; i++) {
       a3 = a1 + a2;
-      System.out.printf("  " + a3);
+      System.out.println("  " + a3);
       a1 = a2;
       a2 = a3;
     }
