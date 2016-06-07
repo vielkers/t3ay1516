@@ -1,7 +1,9 @@
 package matthew.reyes;
 
-public class Ex2 {
-  public static void main(String[] args) {
+public class Ex2
+{
+  public static void main(String[] args)
+  {
     // Exercise 2.1
     // Implement fibonacci sequence
     // Use x1 = 0, x2 = 1 as starting variables
@@ -43,6 +45,31 @@ public class Ex2 {
       // 3. Optional: all even numbers except 2 are automatically not prime
       // 2 is the only even prime number
 
+
+      System.out.println("\n \nThese are the Prime numbers from 1 to " +maxNumber);// Prints the Statement
+
+      for (int p = 1; p<=maxNumber; p++) //Causes thecount to start from 1 and to stop once it reaches the maximum number
+      {
+
+        boolean primeNumber = true; //Introduces the boolean function and states the true value for prime numbers
+
+        for (int d = 2; d < p; d++) //Indicates that d will increase by 1 as long as it is less than p
+        {
+
+          if (p % d == 0) { //Indicates that p will be divided by d and that if the resulting answer is zero, then the value for primeNumber will be false
+
+            primeNumber = false;//see above
+
+          }
+
+        }
+
+        if (primeNumber)
+        {
+          System.out.print(p + "\n"); //If statement stating that it will print the values of the numbers if Prime = true
+
+        }
+      }
     }
   }
 }
