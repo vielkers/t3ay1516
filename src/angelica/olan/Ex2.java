@@ -1,15 +1,15 @@
-/* package angelica.olan;
+package angelica.olan;
 
 public class Ex2 {
   public static void main(String[] args) {
-    int a1 =0, a2 = 1, a3, i;
-    System.out.printf(a1 + " " + a2);
+    int x1 =0, x2 = 1, x3, i;
+    System.out.printf(x1 + " " + x2);
     for (i=2; i<9;i++)
     {
-      a3=a1 + a2;
-      System.out.printf(" " + a3);
-      a1=a2;
-      a2=a3;
+      x3=x1 + x2;
+      System.out.printf(" " + x3);
+      x1=x2;
+      x2=x3;
     }
     // Use x1 = 0, x2 = 1 as starting variables
     // x3 = 1
@@ -24,23 +24,38 @@ public class Ex2 {
     // 2. Equation form: Xn = Xn-1 + Xn-2
     // 3. You may need a variable to (a) hold current sum or (b) change values of the x's
 
-    int x1 = 0, x2 = 1, i, x3;
+    // TODO: fix this - redeclaration of variables
+    // int x1 = 0, x2 = 1, i, x3;
 
     System.out.println("x1=" + x1);
     System.out.println("x2=" + x2);
 
-    for (i = 0; i < (n - 2); i++) {
-      x3 = x2 + x1;
-      System.out.println("x" + (i + 3) + "=" + x3);
-      x1 = x2;
-      x2 = x3;
-
-    }
+    // TODO: fix this - n is not declared anywhere
+//    for (i = 0; i < (n - 2); i++) {
+//      x3 = x2 + x1;
+//      System.out.println("x" + (i + 3) + "=" + x3);
+//      x1 = x2;
+//      x2 = x3;
+//
+//    }
 
 
     // Exercise 2.2
     // Implement a primality test of numbers from 2 to maxNumber
-    int maxNumber = 1000;
+
+    // TODO: Wrong syntax - no ; after (int x);
+    // TODO: Wrong usage of return
+//    Boolean isPrime(int x); {
+//      if (x==1)
+//        return false;
+//      if (x==2)
+//        return true;
+//      if (x % 2 == 0)
+//        return false;
+//
+//      for (int n = 3; n <= (int) Math.sqrt(x); n++)
+//        int maxNumber = 1000;
+//    }
     // A number x is prime iff x >= 2, and its only factors are 1 and itself
     // Tips:
     // 1. To check if a number d divides x: (x % d == 0)
@@ -55,6 +70,7 @@ public class Ex2 {
     // 3. Optional: all even numbers except 2 are automatically not prime
     // 2 is the only even prime number
     int prime;
+    int maxNumber = 1000;
     for (i = 0; i <= maxNumber; i++) {
       if (i > 0 && (i % 2 == 0) && (i % 3 == 0) && (i % 5 == 0) && (i % 7 == 0) && (i % 9 == 0) && (i % 11 == 0)) {
         prime = i;
@@ -66,4 +82,3 @@ public class Ex2 {
     }
   }
 }
-*/
