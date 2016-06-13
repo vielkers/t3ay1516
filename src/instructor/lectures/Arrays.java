@@ -51,6 +51,12 @@ public class Arrays {
     System.out.println("Circles Array 3 Size: " + circlesArray3.length);
     System.out.println("Circles Array 4 Size: " + circlesArray4.length);
 
+    // Using foreach loop
+    for(Circle circle : circlesArray1) {
+      System.out.println("Area:" + circle.getArea());
+      System.out.println("Circumference: " + circle.getCircumference());
+    }
+
     // Arrays are IMMUTABLE
     evenNos1[5] = 12;
     // This produces a runtime error because evenNos1 is an array made to contain 5 elements
