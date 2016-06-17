@@ -54,12 +54,10 @@ public class Ex2 {
                         break;
                     }
 
-                    }
                 }
-                // TODO: Fix syntax error on prime
-                /*if (prime != 0) {
+                if (prime != 0) {
                     System.out.println(prime);
-                }*/
+                }
             }
         }
         // A number x is prime iff x >= 2, and its only factors are 1 and itself
@@ -77,3 +75,4 @@ public class Ex2 {
         // 2 is the only even prime number
     }
 
+}
