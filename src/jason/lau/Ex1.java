@@ -1,4 +1,4 @@
-git stypackage jason.lau;
+package jason.lau;
 
 public class Ex1 {
   public static void main(String[] args) {
