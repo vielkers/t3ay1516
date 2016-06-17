@@ -1,24 +1,42 @@
-/* package ysai.bravo;
+package ysai.bravo;
 
 /**
- * Created by JERICHO-NP350U2A on 5/31/2016.
-public class Ex2 {
-    public static void main(String[] args) {
-        // Exercise 2.1
-        // Implement fibonacci sequence
-        int N = Integer.parseInt(args[0]);
-        int f = 0, g = 1;
+ * Created by IE on 6/17/2016.
+ */
+public class Ex2 {public static void main(String[] args) {
+    // Exercise 2.1
+    // Implement fibonacci sequence
+    int n = 9;
+    // Use x1 = 0, x2 = 1 as starting variables
+    // x3 = 1
+    // x4 = 2
+    // x5 = 3
+    // x6 = 5
+    // x7 = 8
+    // x8 = 13
+    // x9 = 21  (if n = 9, you should output 21)
+    // Tips:
+    // 1. Use int variables and loop of your choice (for, while, do-while)
+    // 2. Equation form: Xn = Xn-1 + Xn-2
+    // 3. You may need a variable to (a) hold current sum or (b) change values of the x's
 
-        for (int i = 1; i <= N; i++) {
-            f = f + g;
-            g = f - g;
-            System.out.println(f);
-        }
+    int x1 = 0, x2 = 1, i, x3;
+
+    System.out.println("x1=" + x1);
+    System.out.println("x2=" + x2);
+
+    for (i = 0; i < (n - 2); i++) {
+        x3 = x2 + x1;
+        System.out.println("x" + (i + 3) + "=" + x3);
+        x1 = x2;
+        x2 = x3;
+
     }
-}
+
 
     // Exercise 2.2
     // Implement a primality test of numbers from 2 to maxNumber
+    int maxNumber = 1000;
     // A number x is prime iff x >= 2, and its only factors are 1 and itself
     // Tips:
     // 1. To check if a number d divides x: (x % d == 0)
@@ -32,31 +50,15 @@ public class Ex2 {
     // Determine the max value of d that minimizes the number of division tests
     // 3. Optional: all even numbers except 2 are automatically not prime
     // 2 is the only even prime number
+    int prime;
+    for (i = 0; i <= maxNumber; i++) {
+        if (i > 0 && (i % 2 == 0) && (i % 3 == 0) && (i % 5 == 0) && (i % 7 == 0) && (i % 9 == 0) && (i % 11 == 0)) {
+            prime = i;
+        } else {
+            prime = 0;
+        }
 
-    public static void main(String[] args)
-    {
-        int j = 2;
-        int result = 0;
-        int number = 0;
-        Scanner reader = new Scanner(System.in);
-        System.out.println("Please enter a number: ");
-        number = reader.nextInt();
-        while (j <= number / 2)
-        {
-            if (number % j == 0)
-            {
-                result = 1;
-            }
-            j++;
-        }
-        if (result == 1)
-        {
-            System.out.println("Number: " + number + " is Not Prime.");
-        }
-        else
-        {
-            System.out.println("Number: " + number + " is Prime. ");
-        }
+        System.out.println(prime);
     }
-
-*/
+}
+}
