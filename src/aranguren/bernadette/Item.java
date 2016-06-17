@@ -1,64 +1,27 @@
 package aranguren.bernadette;
 
-/**
- * Created by Bernadette on 6/2/2016.
- */
-
 public class Item {
+    public static void main (String[] args){
 
+        PurchaseOrder PO = new PurchaseOrder();
 
-    private int item_id;
-    private String item_description;
-    private String item_type;
-    private float price;
+        int itemID = 11217014;
+        String itemDesc = "C2 green tea";
+        String itemType = "Beverage";
+        float price = 30f;
 
+        System.out.println("PO NUMBER       : " + PO.poNumber);
+        System.out.println("ITEM            : " + PO.item);
+        System.out.println("QUANTITY        : " + PO.quantity);
+        System.out.println("UNIT OF MEASURE : " + PO.uom + "\n");
 
-    public Item(int item_id, float price, String item_type, String item_description) {
-        this.item_id = item_id;
-        this.price = price;
-        this.item_type = item_type;
-        this.item_description = item_description;
+        System.out.println("YOUR ORDER IS:");
+        System.out.println("ITEM ID          : " + itemID);
+        System.out.println("ITEM DESCRIPTION : " + itemDesc);
+        System.out.println("ITEM TYPE        : " + itemType);
+        System.out.println("PRICE PER UNIT   : " + "PHP " + price + "\n");
+
+        System.out.println("TOTAL PRICE      : " + "PHP " + price*PO.quantity);
+
     }
-
-    public int getItem_id() {
-        return item_id;
-    }
-
-    public void setItem_id(int item_id) {
-        this.item_id = item_id;
-    }
-
-    public float getPrice() {
-        return price;
-    }
-
-    public void setPrice(float price) {
-        this.price = price;
-    }
-
-    public String getItem_type() {
-        return item_type;
-    }
-
-    public void setItem_type(String item_type) {
-        this.item_type = item_type;
-    }
-
-    public String getItem_description() {
-        return item_description;
-    }
-
-    public void setItem_description(String item_description) {
-        this.item_description = item_description;
-    }
-//int itemid;
-//String itemdescription;
-//String itemtype;
-//float price;
-
-    //itemid = 1121704;
-    //itemdescription = "description";
-    //itemtype = "type";
-    //price = 100;
-
 }
