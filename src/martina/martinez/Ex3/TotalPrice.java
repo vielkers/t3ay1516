@@ -1,4 +1,4 @@
-package martina.martinez;
+package martina.martinez.Ex3;
 
 public class TotalPrice {
 	int quantity;
