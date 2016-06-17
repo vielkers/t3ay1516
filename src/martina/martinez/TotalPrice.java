@@ -24,5 +24,7 @@ public class TotalPrice {
 	public void setPrice(float price) {
 		this.price = price;
 	}
-	
+	public float getTotalPrice(){
+		return quantity*price;
+	}
 }
