@@ -6,9 +6,9 @@ package reyna.deluna;
 
 public class PurchaseOrder {
     private int num;
-    private float qty;
+    private int qty;
 
-    public PurchaseOrder(int num, float qty) {
+    public PurchaseOrder(int num, int qty) {
         this.num = num;
         this.qty = qty;
     }
@@ -21,11 +21,11 @@ public class PurchaseOrder {
         this.num = num;
     }
 
-    public float getQty() {
+    public int getQty() {
         return qty;
     }
 
-    public void setQty(float qty) {
+    public void setQty(int qty) {
         this.qty = qty;
     }
 }
