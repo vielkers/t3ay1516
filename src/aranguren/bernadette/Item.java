@@ -3,25 +3,33 @@ package aranguren.bernadette;
 public class Item {
     public static void main (String[] args){
 
-        PurchaseOrder PO = new PurchaseOrder();
+        int poNumber = 923;
+        String[] item = new String[]{"Cream Bowl","Hand Towel","Overnight Kit","1/1 Traymat","White Seal"};
+        int[] quantity = new int[]{24, 50, 100, 2, 3};
+        String[] uom = new String[]{"EA", "BX", "ST", "CS", "TH"};
 
-        int itemID = 11217014;
-        String itemDesc = "C2 green tea";
-        String itemType = "Beverage";
-        float price = 30f;
+        PurchaseOrder PO = new PurchaseOrder(poNumber, item, quantity, uom);
 
-        System.out.println("PO NUMBER       : " + PO.poNumber);
-        System.out.println("ITEM            : " + PO.item);
-        System.out.println("QUANTITY        : " + PO.quantity);
-        System.out.println("UNIT OF MEASURE : " + PO.uom + "\n");
+        int[] itemID = new int[] {82964, 91464, 82792, 92395, 83100};
+        String[] itemDesc = new String[] {"Porcelain Cream Bowl (Tall)", "Disposable Towels in Box", "Business Class Overnight Kit", "Atlas Paper Traymat 1/1","Seal, Plastic 'White' without Barcode"};
+        String[] itemType = new String[] {"Equipment", "Linen", "Bonded", "Equipment Supplies", "Dry Goods"};
+        float[] price = new float[] {1.4f, 1.62f, 5.5f, 54.29f, 22.25f};
 
-        System.out.println("YOUR ORDER IS:");
-        System.out.println("ITEM ID          : " + itemID);
-        System.out.println("ITEM DESCRIPTION : " + itemDesc);
-        System.out.println("ITEM TYPE        : " + itemType);
-        System.out.println("PRICE PER UNIT   : " + "PHP " + price + "\n");
+        System.out.println("PO NUMBER: " + PO.poNumber);
+        System.out.printf("%-5s %-10s %-18s %-40s %-25s %-10s %-15s %-14s %-10s \n", "NO", "ITEM ID", "ITEM", "ITEM DESC", "TYPE", "UOM", "UNIT PRICE", "QUANTITY", "AMOUNT");
+        int i;
+        for(i = 0; i < 5; i++){
 
-        System.out.println("TOTAL PRICE      : " + "PHP " + price*PO.quantity);
-
+            System.out.printf("%-5d %-10d %-18s %-40s %-25s %-10s $%-16f %-12d %-10f \n", i+1, itemID[i], PO.item[i], itemDesc[i], itemType[i], PO.uom[i], price[i], PO.quantity[i], price[i]*PO.quantity[i]);
+        }
+        float j = 0;
+        float num = 0;
+        for(i = 0; i < 5; i++) {
+            num = price[i]*PO.quantity[i];
+            j = j+num;
+        }
+        System.out.println("\n\n TOTAL PRICE: " + "$" + j);
     }
 }
+
+

@@ -1,48 +1,49 @@
 package aranguren.bernadette;
 
 public class PurchaseOrder {
-    public int poNumber;
-    public String item;
-    public int quantity;
-    public String uom;
+    public int poNumber = 923;
 
-    public PurchaseOrder() {
-        poNumber = 923;
-        item = "C2 green tea - Apple flavor";
-        quantity = 5;
-        uom = "500 ml bottle";
+    String[] item = new String[]{"Cream Bowl","Hand Towel","Overnight Kit","1/1 Traymat","White Seal"};
+    int[] quantity = new int[]{24, 50, 100, 2, 3};
+    String[] uom = new String[]{"EA", "BX", "ST", "CS", "TH"};
+
+    public PurchaseOrder(int poNumber, String[] item, int[] quantity, String[] uom) {
+        this.poNumber = poNumber;
+        this.item = item;
+        this.quantity = quantity;
+        this.uom = uom;
+    }
+
+    public int getPoNumber() {
+        return poNumber;
     }
 
     public void setPoNumber(int poNumber) {
         this.poNumber = poNumber;
     }
 
-    public String getItem() {
+    public String[] getItem() {
         return item;
     }
 
-    public void setItem(String item) {
+    public void setItem(String[] item) {
         this.item = item;
     }
 
-    public int getQuantity() {
+    public int[] getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(int quantity) {
+    public void setQuantity(int[] quantity) {
         this.quantity = quantity;
     }
 
-    public String getUom() {
+    public String[] getUom() {
         return uom;
     }
 
-    public void setUom(String uom) {
+    public void setUom(String[] uom) {
         this.uom = uom;
-    }
-
-    public int getPoNumber() {
-        return this.poNumber;
     }
 
 }
