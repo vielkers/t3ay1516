@@ -8,9 +8,9 @@ public class PurchaseOrder {
 
     public PurchaseOrder() {
         poNumber = 923;
-        item = "C2 green tea - Apple flavor";
-        quantity = 5;
-        uom = "500 ml bottle";
+        item = "Cream Bowl";
+        quantity = 24;
+        uom = "EA";
     }
 
     public void setPoNumber(int poNumber) {
@@ -20,29 +20,4 @@ public class PurchaseOrder {
     public String getItem() {
         return item;
     }
-
-    public void setItem(String item) {
-        this.item = item;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    public String getUom() {
-        return uom;
-    }
-
-    public void setUom(String uom) {
-        this.uom = uom;
-    }
-
-    public int getPoNumber() {
-        return this.poNumber;
-    }
-
 }
