@@ -9,11 +9,10 @@ public class Static {
         public static int x;
         public int y;
 
-        public static int xTimesTwo(){
+        public static int xTimesTwo() {
+          // TODO: Fix this
+          // return x * this.y;
+          return 0;
+        }
 
-        return x * this.y;
-
-
-
-    }
 }
