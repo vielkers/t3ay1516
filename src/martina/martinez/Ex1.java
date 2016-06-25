@@ -1,10 +1,14 @@
+// TODO: Fix errors
+/*
 package martina.martinez;
 
 import com.sun.javafx.image.BytePixelSetter;
 
+*/
 /**
  * Created by IE on 6/17/2016.
- */
+ *//*
+
 public class Ex1 {
     //Ex1.1
     int n = Integer.parseInt(args[0]);
@@ -30,3 +34,4 @@ public class Ex1 {
     //print odd numbers
     }
 
+*/

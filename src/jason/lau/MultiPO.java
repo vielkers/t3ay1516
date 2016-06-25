@@ -1,8 +1,12 @@
+// TODO: Fix errors
+/*
 package jason.lau;
 
+*/
 /**
  * Created by Jason on 6/10/2016.
- */
+ *//*
+
 public class MultiPO {
     public static void main(String[] args) {
         Items Dove = new Items(1, "Shampoo", "Personal Care", 240.01f);
@@ -30,3 +34,4 @@ public class MultiPO {
 
     }
 }
+*/
