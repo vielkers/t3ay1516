@@ -4,17 +4,21 @@ package anton.santos.PurchaseOrder;
  * Created by Anton on 6/17/2016.
  */
 public class PurchaseOrder {
-    int PONumber;
+    public static int count = 1000;
+    int  PONumber;
     int [] quantity ;
     String [] UOM;
     Item [] box;
 
 
-    public PurchaseOrder(int PONumber, int [] quantity, String [] UOM, Item [] box) {
-        this.PONumber = PONumber;
+    public PurchaseOrder( int [] quantity, String [] UOM, Item [] box) {
+        this.PONumber = count;
         this.quantity  = quantity;
         this.UOM = UOM;
         this.box = box;
+        count ++;
+
+
     }
 
     public float getTotalPOPrice(){
