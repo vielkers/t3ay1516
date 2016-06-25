@@ -3,13 +3,13 @@ package macavinta.gianninah.ex3;
 /**
  * Created by IE on 6/25/2016.
  */
-public class Item {
+public class item {
     int itemID;
     String itemDescription;
     String itemType;
     float price;
 
-    public Item (int itemID, String itemDescription, String itemType, float price){
+    public item (int itemID, String itemDescription, String itemType, float price){
         this.itemID=itemID;
         this.itemDescription=itemDescription;
         this.itemType=itemType;
