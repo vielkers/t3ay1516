@@ -1,4 +1,4 @@
-package ryna.bato;
+package ryna.bato.Ex3;
 
 public class PurchaseOrder {
     public int poNumber = 1234;
