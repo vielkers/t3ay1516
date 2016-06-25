@@ -3,7 +3,7 @@ package keith.lim;
 public class Item {
 
     int itemID;
-    String itemDesc;
+    public String itemDesc;
     String itemType;
     float price;
     int qty;
