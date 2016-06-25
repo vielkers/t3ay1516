@@ -27,12 +27,8 @@ public class MultiPO {
         System.out.println("Items: ");
 
         for(int i = 0; i < 4; i++) {
-
-            System.out.println(Here.getQuan() + " ");
+          System.out.print(Here[i].getquan() + " " + Here[i].getuom() + " of ");
         }
-
-
-
     }
 }
 
