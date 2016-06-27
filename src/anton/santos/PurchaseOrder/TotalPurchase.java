@@ -24,9 +24,13 @@ public class TotalPurchase {
         int[] qarray = {3,5,7};
         String [] zarray = {"boxes", "bars", "bottles"};
         Item [] narray = {safeguard, kitkat, coke, twinkies};
-        PurchaseOrder First = new PurchaseOrder(1001, qarray,zarray,narray);
-        First.PONumber = 1001;
+        PurchaseOrder First = new PurchaseOrder(qarray,zarray,narray);
+        PurchaseOrder Second = new PurchaseOrder(qarray,zarray,narray);
+        //First.PONumber = 1001;
+
         int Total = 0;
+
+
         System.out.print("Purchase order # ");
         System.out.println(First.PONumber);
         System.out.println("Your purchases:");
@@ -45,7 +49,13 @@ public class TotalPurchase {
         }
         //Total Price Calculation
         System.out.print("Total Amount due is = Php ");
-        System.out.print(total);
+        System.out.println(total);
+
+        if((First.PONumber) == PurchaseOrder.count -1 ) {
+
+            System.out.print("This is the latest PO");
+        } else System.out.print("This is not the latest PO");
+
 
 
     }
