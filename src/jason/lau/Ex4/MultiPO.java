@@ -8,7 +8,7 @@ import jason.lau.Ex3.Items;
 
 public class MultiPO {
     public static void main(String[] args) {
-        float sum = 0;
+        float sum;
         float total = 0;
 
         Items Dove = new Items(1, "Dove", "Personal Care", 240.01f);
