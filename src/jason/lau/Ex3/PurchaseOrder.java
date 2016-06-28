@@ -1,4 +1,4 @@
-package jason.lau;
+package jason.lau.Ex3;
 
 /**
  * Created by Jason on 6/7/2016.
