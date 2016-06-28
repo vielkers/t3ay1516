@@ -8,16 +8,16 @@ import jason.lau.Ex3.Items;
 
 public class MultiPO {
     public static void main(String[] args) {
-        float sum = 0;
+        float sum;
         float total = 0;
 
-        Items Dove = new Items(1, "Shampoo", "Personal Care", 240.01f);
-        Items LiptonTea = new Items(2, "Bottles", "Drinks", 46.89f);
-        Items Surf = new Items(3, "Pack", "Home Care", 9.00f);
-        Items Rexona = new Items(4, "Bottles", "Personal Care", 65.45f);
+        Items Dove = new Items(1, "Dove", "Personal Care", 240.01f);
+        Items LiptonTea = new Items(2, "LiptonTea", "Drinks", 46.89f);
+        Items Surf = new Items(3, "Surf", "Home Care", 9.00f);
+        Items Rexona = new Items(4, "Rexona", "Personal Care", 65.45f);
 
         int [] sarray = {4,5,8,9};
-        String [] larray = {"Shampoo", "Bottles", "Home Care", "Personal Care"};
+        String [] larray = {"Bottles", "Box", "Bag", "Bottles"};
         Items [] harray = {Dove, LiptonTea, Surf, Rexona};
         PurchaseOrder2 Here = new PurchaseOrder2(1, sarray, larray,harray);
 
