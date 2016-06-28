@@ -13,21 +13,32 @@ public class Item {
 
         PurchaseOrder PO = new PurchaseOrder(num, descr, qty, uom);
 
+        int[] CoId = new int[]{941253, 845602, 45936};
+        String[] CoName = new String[]{"Toshiba", "Olay", "Nestle"};
+        String[] address = {"Japan", "USA", "Philippines"};
+        String[] phone = {"8969586", "1598631", "7865234"};
+
+        Company CO = new Company(CoId, CoName, address, phone);
+
         int[] ID = {912646, 159863, 879652};
         String[] type = {"Computers & Laptops", "Health & Beauty", "Groceries"};
         float[] price = {2650.75f, 1699.50f, 500.80f};
 
-        System.out.println("PO Number: " + PO.num + "\n");
+        System.out.println("PO Number: " + PO.num + "\n\n---------------\n");
         int c;
 
         for (c = 0; c < 3; c++) {
             System.out.println("Item ID: " + ID[c]);
             System.out.println("Item Description: " + PO.descr[c]);
-            System.out.println("Item Type: " + type[c]);
+            System.out.println("Item Type: " + type[c] + "\n");
+            System.out.println("Vendor ID: " + CO.CoId[c]);
+            System.out.println("Vendor Name: " + CO.CoName[c]);
+            System.out.println("Vendor Address: " + CO.address[c]);
+            System.out.println("Vendor Phone: " + CO.phone[c] + "\n");
             System.out.println("Price: " + price[c]);
             System.out.println("UOM: " + PO.uom[c]);
             System.out.println("Quantity: " + PO.qty[c]);
-            System.out.println("\n");
+            System.out.println("\n---------------\n");
         }
 
         float a = 0;
