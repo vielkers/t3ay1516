@@ -1,4 +1,4 @@
-package reyna.deluna.Ex2;
+package reyna.deluna;
 
     public class Ex2 {
         public static void main(String[] args) {
