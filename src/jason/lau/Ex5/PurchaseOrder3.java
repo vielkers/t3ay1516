@@ -6,6 +6,7 @@ import jason.lau.Ex3.Items;
  * Created by Jason on 6/7/2016.
  */
 public class PurchaseOrder3 {
+    public static int count = 1000;
     float ponumber;
     int[] quantity;
     String[] uom1;
@@ -16,6 +17,7 @@ public class PurchaseOrder3 {
         this.quantity = quantity;
         this.uom1 = uom1;
         this.casess = casess;
+        count ++;
     }
 
     public float getPonumber() {
