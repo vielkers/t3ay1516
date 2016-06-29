@@ -1,4 +1,4 @@
-package src.matthew.reyes.Exercise4;
+package matthew.reyes.Exercise4;
 
 /**
  * Created by victorreyes on 28/06/2016.
@@ -10,7 +10,7 @@ public class TotalAmount {
     private Item item;
 
 
-    public PurchaseOrder(int PONumber, String UOM, float quantity, Item item) {
+    public TotalAmount(int PONumber, String UOM, float quantity, Item item) {
         this.PONumber = PONumber;
         this.UOM = UOM;
         this.quantity = quantity;
