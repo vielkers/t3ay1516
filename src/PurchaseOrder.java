@@ -5,6 +5,7 @@ public class PurchaseOrder {
     int poNumber;
     int qty;
     String uom;
+    static int counter = 0;
 
     public int getPoNumber() {
         return poNumber;
@@ -31,7 +32,8 @@ public class PurchaseOrder {
     }
 
     public PurchaseOrder(int poNumber, int qty, String uom) {
-        this.poNumber = poNumber;
+        counter = counter + 1;
+        this.poNumber = counter;
         this.qty = qty;
         this.uom = uom;
     }

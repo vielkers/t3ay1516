@@ -6,6 +6,8 @@ public class TotalPurchase {
 
     public static void main(String[] args) {
 
+
+
         keith.lim.Item basket[] = new keith.lim.Item[]{new keith.lim.Item(1, "Chihuahua", "Dog", 5000, 5, "Crates")
                 , new keith.lim.Item(2, "Shark", "Fish", 10000, 3, "Aquariums")
                 , new keith.lim.Item(3, "Gerbil", "Expensive Rodent", 50000, 10, "Packs")};
