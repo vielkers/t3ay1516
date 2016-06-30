@@ -1,9 +1,10 @@
 package aranguren.bernadette;
 
-public class Item {
+
+public class ItemEx3 {
     public static void main (String[] args){
 
-        PurchaseOrder PO = new PurchaseOrder();
+        PurchaseOrderEx3 PO = new PurchaseOrderEx3();
 
         int itemID = 11217014;
         String itemDesc = "Porcelain Cream Bowl (Tall)";
