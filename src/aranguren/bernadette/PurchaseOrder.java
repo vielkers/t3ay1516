@@ -45,6 +45,5 @@ public class PurchaseOrder {
     public void setUom(String[] uom) {
         this.uom = uom;
     }
-
 }
 
