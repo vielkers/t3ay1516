@@ -17,31 +17,24 @@ public class PurchaseOrder {
     public int getPoNumber() {
         return poNumber;
     }
-
     public void setPoNumber(int poNumber) {
         this.poNumber = poNumber;
     }
-
     public String[] getItem() {
         return item;
     }
-
     public void setItem(String[] item) {
         this.item = item;
     }
-
     public int[] getQuantity() {
         return quantity;
     }
-
     public void setQuantity(int[] quantity) {
         this.quantity = quantity;
     }
-
     public String[] getUom() {
         return uom;
     }
-
     public void setUom(String[] uom) {
         this.uom = uom;
     }

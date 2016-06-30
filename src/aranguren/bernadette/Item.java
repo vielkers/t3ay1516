@@ -22,12 +22,15 @@ public class Item {
 
             System.out.printf("%-5d %-10d %-18s %-40s %-25s %-10s $%-16f %-12d %-10f \n", i+1, itemID[i], PO.item[i], itemDesc[i], itemType[i], PO.uom[i], price[i], PO.quantity[i], price[i]*PO.quantity[i]);
         }
+
         float j = 0;
         float num = 0;
+
         for(i = 0; i < 5; i++) {
             num = price[i]*PO.quantity[i];
             j = j+num;
         }
+
         System.out.println("\n\n TOTAL PRICE: " + "$" + j);
     }
 }
