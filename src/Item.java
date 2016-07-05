@@ -1,5 +1,3 @@
-package keith.lim;
-
 public class Item {
 
     int itemID;
