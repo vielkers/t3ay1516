@@ -1,8 +1,5 @@
 package reyna.deluna;
 
-/**
- * Created by IE on 6/28/2016.
- */
 public class Company {
 
     int[] CoId = new int[]{941253, 845602, 45936};

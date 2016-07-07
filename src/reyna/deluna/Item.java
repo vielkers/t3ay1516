@@ -1,8 +1,5 @@
 package reyna.deluna;
 
-/**
- * Created by IE on 6/28/2016.
- */
 public class Item {
     public static void main(String[] args) {
 
@@ -47,6 +44,7 @@ public class Item {
             n = price[c]*PO.qty[c];
             a = a+n;
         }
-            System.out.println("TOTAL PRICE: " + "PHP " + a);
-        }
+        System.out.println("TOTAL PRICE: " + "PHP " + a);
     }
+
+}
