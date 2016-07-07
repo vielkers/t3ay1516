@@ -23,8 +23,11 @@ public class PO {
         this.quantities = quantities;
         this.unitOfMeasure = unitOfMeasure;
     }
+    // TODO: Fix this (These should be inside methods)
+    /*
     hm.put(nth,1001);
     System.out.println(hm.get.nth);
+    */
     public int getPONumber() {
         return PONumber;
     }
