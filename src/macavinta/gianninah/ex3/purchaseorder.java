@@ -13,7 +13,7 @@ public class purchaseorder {
     int quantity;
     String UOM;
 
-    public purchaseorder(int poNo, ArrayList<String> Items, int quantity, String UOM){
+    public purchaseorder (int poNo, ArrayList<String> Items, int quantity, String UOM){
         this.poNo=poNo;
         this.Items=Items;
         this.quantity=quantity;
