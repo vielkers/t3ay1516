@@ -34,7 +34,7 @@ public class MultiPO {
             total = total + sum;
         }
 
-        System.out.println("-----------------------------");
+        System.out.println("------------------------------");
         System.out.println("Total Purchase: " + total);
     }
 }
