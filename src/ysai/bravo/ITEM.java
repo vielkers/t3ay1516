@@ -1,53 +1,50 @@
 package ysai.bravo;
 
 /**
- * Created by IE on 6/17/2016.
+ * Created by IE on 6/28/2016.
  */
 public class ITEM {
-    private int itemid;
-    private String itemdescription;
-    private String itemtype;
+    private int id;
+    private String itemDescription;
+    private String itemType;
     private float price;
-    private String UOM;
 
-    public ITEM(int itemid, String itemdescription, float price, String itemtype, String UOM) {
-        this.itemid = itemid;
-        this.itemdescription = itemdescription;
+    public ITEM() {
+        this.id = 9999;
+        this.itemDescription = "item";
+        this.itemType = "item";
+        this.price = 100.00f;
+    }
+
+    public ITEM(int id, String itemDescription, String itemType, float price) {
+        this.id = id;
+        this.itemDescription = itemDescription;
+        this.itemType = itemType;
         this.price = price;
-        this.itemtype = itemtype;
-        this.UOM = UOM;
     }
 
-    public String getUOM() {
-        return UOM;
+    public int getId() {
+        return id;
     }
 
-    public void setUOM(String UOM) {
-        this.UOM = UOM;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public int getItemid() {
-        return itemid;
+    public String getItemDescription() {
+        return itemDescription;
     }
 
-    public void setItemid(int itemid) {
-        this.itemid = itemid;
+    public void setItemDescription(String itemDescription) {
+        this.itemDescription = itemDescription;
     }
 
-    public String getItemdescription() {
-        return itemdescription;
+    public String getItemType() {
+        return itemType;
     }
 
-    public void setItemdescription(String itemdescription) {
-        this.itemdescription = itemdescription;
-    }
-
-    public String getItemtype() {
-        return itemtype;
-    }
-
-    public void setItemtype(String itemtype) {
-        this.itemtype = itemtype;
+    public void setItemType(String itemType) {
+        this.itemType = itemType;
     }
 
     public float getPrice() {
