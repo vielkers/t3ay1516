@@ -1,27 +1,26 @@
-package macavinta.gianninah.ex3;
+package macavinta.gianninah.ex4;
 
 /**
- * Created by IE on 6/25/2016.
+ * Created by IE on 7/15/2016.
  */
-public class item {
-    int itemID;
-    String itemDescription;
-    String itemType;
-    float price;
+public class item {private int id;
+    private String itemDescription;
+    private String itemType;
+    private float price;
 
-    public item (int itemID, String itemDescription, String itemType, float price){
-        this.itemID=itemID;
-        this.itemDescription=itemDescription;
-        this.itemType=itemType;
-        this.price=price;
+    public Item(int id, String itemDescription, String itemType, float price){
+        this.id = id;
+        this.itemDescription = itemDescription;
+        this.itemType = itemType;
+        this.price = price;
     }
 
-    public int getItemID() {
-        return itemID;
+    public int getId() {
+        return id;
     }
 
-    public void setItemID(int itemID) {
-        this.itemID = itemID;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getItemDescription() {
