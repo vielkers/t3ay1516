@@ -1,8 +1,12 @@
+// TODO: Fix this (There should be no void after 'public class')
+/*
 package macavinta.gianninah;
 
+*/
 /**
  * Created by IE on 7/5/2016.
- */
+ *//*
+
 public class void printInfo(Shape s){
 
 
@@ -19,4 +23,5 @@ string name;
         Triangle tri = new Triangle(5, 12,13);
         printInfo(circ);
         printInfro(tri);
+*/
 
