@@ -1,7 +1,9 @@
-package reyna.deluna;
+package reyna.deluna.Ex6;
 
+/**
+ * Created by IE on 7/22/2016.
+ */
 public class Company {
-
     int[] CoId = new int[]{941253, 845602, 45936};
     String[] CoName = new String[]{"Toshiba", "Olay", "Nestle"};
     String[] address = {"Japan", "USA", "Philippines"};
