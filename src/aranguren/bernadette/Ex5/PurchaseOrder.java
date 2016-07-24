@@ -1,4 +1,4 @@
-package aranguren.bernadette;
+package aranguren.bernadette.Ex5;
 
 public class PurchaseOrder {
     public int poNumber = 923;
