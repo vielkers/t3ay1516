@@ -1,4 +1,4 @@
-package aranguren.bernadette;
+package aranguren.bernadette.Ex4;
 
 public class Item {
     public static void main (String[] args){
