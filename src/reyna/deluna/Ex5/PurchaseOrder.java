@@ -1,16 +1,16 @@
-package reyna.deluna;
+package reyna.deluna.Ex5;
 
+/**
+ * Created by IE on 7/22/2016.
+ */
 public class PurchaseOrder {
-
-    public static int POsToDate;
     public int num = 001;
     String[] descr = new String[] {"Toshiba Canvio Ready 3.0 1TB Portable Hard", "Olay Night Ritual", "Nestle Koko Krunch 500g"};
     int[] qty = new int[] {1, 2, 5};
     String[] uom = new String[] {"EA", "BT", "PK"};
 
     public PurchaseOrder(int num, String[] descr, int[] qty, String[] uom) {
-        POsToDate++;
-        this.num = POsToDate;
+        this.num = num;
         this.descr = descr;
         this.qty = qty;
         this.uom = uom;
@@ -46,11 +46,5 @@ public class PurchaseOrder {
 
     public void setUom(String[] uom) {
         this.uom = uom;
-    }
-
-    public boolean isLatestPO() {
-        if (POsToDate == this.num ) {
-            return true;
-        } else return false;
     }
 }

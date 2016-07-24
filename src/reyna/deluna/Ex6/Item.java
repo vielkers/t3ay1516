@@ -1,5 +1,8 @@
-package reyna.deluna;
+package reyna.deluna.Ex6;
 
+/**
+ * Created by IE on 7/22/2016.
+ */
 public class Item {
     public static void main(String[] args) {
 
@@ -46,5 +49,4 @@ public class Item {
         }
         System.out.println("TOTAL PRICE: " + "PHP " + a);
     }
-
 }
