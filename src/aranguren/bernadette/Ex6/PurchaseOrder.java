@@ -1,26 +1,32 @@
-package aranguren.bernadette;
+package aranguren.bernadette.Ex6;
 
 public class PurchaseOrder {
-    public int poNumber = 923;
+    private int POsToDate;
+    public int poNumber;
+
+
+    public PurchaseOrder(){
+
+    }
 
     String[] item = new String[]{"Cream Bowl","Hand Towel","Overnight Kit","1/1 Traymat","White Seal"};
     int[] quantity = new int[]{24, 50, 100, 2, 3};
     String[] uom = new String[]{"EA", "BX", "ST", "CS", "TH"};
 
     public PurchaseOrder(int poNumber, String[] item, int[] quantity, String[] uom) {
-        this.poNumber = poNumber;
+        if (POsToDate == 0) {
+            POsToDate++;
+        }
+        this.poNumber = POsToDate;
+        POsToDate++;
         this.item = item;
         this.quantity = quantity;
         this.uom = uom;
     }
 
-    public int getPoNumber() {
-        return poNumber;
-    }
+    public int getPoNumber() {return poNumber;}
 
-    public void setPoNumber(int poNumber) {
-        this.poNumber = poNumber;
-    }
+    public void setPoNumber(int poNumber) {this.poNumber = poNumber;}
 
     public String[] getItem() {
         return item;
@@ -46,5 +52,10 @@ public class PurchaseOrder {
         this.uom = uom;
     }
 
-}
+    public boolean isLatestPO() {
+        if ((POsToDate-1) == this.poNumber) {
+            return true;
+        } else return false;
+    }
 
+}
