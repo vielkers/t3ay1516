@@ -1,4 +1,4 @@
-package aranguren.bernadette;
+package aranguren.bernadette.Ex3;
 
 
 public class ItemEx3 {
