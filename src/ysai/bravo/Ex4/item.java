@@ -1,22 +1,22 @@
-package ysai.bravo;
+package ysai.bravo.Ex4;
 
 /**
- * Created by IE on 6/28/2016.
+ * Created by IE on 7/26/2016.
  */
-public class ITEM {
+public class item {
     private int id;
     private String itemDescription;
     private String itemType;
     private float price;
 
-    public ITEM() {
+    public item() {
         this.id = 9999;
         this.itemDescription = "item";
         this.itemType = "item";
         this.price = 100.00f;
     }
 
-    public ITEM(int id, String itemDescription, String itemType, float price) {
+    public item(int id, String itemDescription, String itemType, float price) {
         this.id = id;
         this.itemDescription = itemDescription;
         this.itemType = itemType;

@@ -1,18 +1,18 @@
-package ysai.bravo;
+package ysai.bravo.Ex4;
 
 /**
- * Created by IE on 6/28/2016.
+ * Created by IE on 7/26/2016.
  */
-public class PO {
+public class po {
     private int PONumber;
-    private ITEM[] items;
+    private item[] items;
     private float[] quantities;
     private String[] unitOfMeasure;
 
-    public PO() {
+    public po() {
     }
 
-    public PO(int PONumber, ITEM[] items, float[] quantities, String[] unitOfMeasure) {
+    public po(int PONumber, item[] items, float[] quantities, String[] unitOfMeasure) {
         this.PONumber = PONumber;
         this.items = items;
         this.quantities = quantities;
@@ -27,11 +27,11 @@ public class PO {
         this.PONumber = PONumber;
     }
 
-    public ITEM[] getItems() {
+    public item[] getItems() {
         return items;
     }
 
-    public void setItems(ITEM[] items) {
+    public void setItems(item[] items) {
         this.items = items;
     }
 
