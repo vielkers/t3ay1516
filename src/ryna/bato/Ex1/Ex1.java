@@ -28,6 +28,7 @@ public class Ex1 {
         System.out.println(nums[7]);
         System.out.println(nums[8]);
         System.out.println(nums[9]);
+        System.out.println("Hello");
     }
 }
 
