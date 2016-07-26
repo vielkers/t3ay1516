@@ -11,9 +11,9 @@ public class Company {
 
     public Company() {
         this.id = 0;
-        this.name = "ABC Corporation";
-        this.address = "Taft Avenue, Manila, Philippines";
-        this.phone = "955-8685";
+        this.name = "SC Johnson Philippines ROHQ";
+        this.address = "Makati, Philippines";
+        this.phone = "xxx-xxxx";
     }
 
     public Company(int id, String name, String address, String phone) {
