@@ -1,17 +1,19 @@
-package keith.lim.TermProject;
+// TODO: Fix errors
+
+/*package keith.lim.TermProject;
 
 import java.util.ArrayList;
 
-/**
+*//**
  * Created by kiiiiibble on 7/22/2016.
- */
+ *//*
 
-/* PURCHASE REQUISITION
+*//* PURCHASE REQUISITION
 A PR is a form sent from someone inside the company to the purchasing department.
 Basically, it says "someone inside the company wants to order these things."
 The purchaser then looks for suppliers and gets quotes that fulfill the needs
 of the internal person.
-*/
+*//*
 public class PR {
 
     //to do: set items class. Adjust it here.
@@ -70,4 +72,4 @@ public class PR {
     public void setRequesting(String requesting) {
         this.requesting = requesting;
     }
-}
+}*/

@@ -1,10 +1,11 @@
-package keith.lim.ex7;
+// TODO: Fix errors
+/*package keith.lim.ex7;
 
 import java.util.HashMap;
 
-/**
+*//**
  * Created by kiiiiibble on 7/21/2016.
- */
+ *//*
 public class ItemsPrice {
     public static HashMap<Integer, Float> ID= new HashMap<>();
 
@@ -21,4 +22,4 @@ public class ItemsPrice {
 
     }
 
-}
+}*/
