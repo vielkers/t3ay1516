@@ -20,17 +20,20 @@ public class Ex2 {public static void main(String[] args) {
     // 2. Equation form: Xn = Xn-1 + Xn-2
     // 3. You may need a variable to (a) hold current sum or (b) change values of the x's
 
-    int x1 = 0, x2 = 1, i, x3;
+    System.out.println("Exercise 2.1");
+    System.out.println("FIBONACCI SEQUENCE\n");
 
-    System.out.println("x1=" + x1);
-    System.out.println("x2=" + x2);
+    int X1=0, X2=1, xn, c;
 
-    for (i = 0; i < (n - 2); i++) {
-        x3 = x2 + x1;
-        System.out.println("x" + (i + 3) + "=" + x3);
-        x1 = x2;
-        x2 = x3;
-
+    for (c=0; c < n ; c++ ) {
+        if (c <= 1)
+            xn = c;
+        else {
+            xn = X1 + X2;
+            X1 = X2;
+            X2 = xn;
+        }
+        System.out.println(xn);
     }
 
 
@@ -50,15 +53,21 @@ public class Ex2 {public static void main(String[] args) {
     // Determine the max value of d that minimizes the number of division tests
     // 3. Optional: all even numbers except 2 are automatically not prime
     // 2 is the only even prime number
-    int prime;
-    for (i = 0; i <= maxNumber; i++) {
-        if (i > 0 && (i % 2 == 0) && (i % 3 == 0) && (i % 5 == 0) && (i % 7 == 0) && (i % 9 == 0) && (i % 11 == 0)) {
-            prime = i;
-        } else {
-            prime = 0;
-        }
+    System.out.println("\n\nExercise 2.2");
+    System.out.println("PRIMALITY TEST\n");
 
-        System.out.println(prime);
+    int d=2;
+
+    for (d=2;d<=n-1;d++)
+    {
+        if (d%c==0)
+        {
+            System.out.println(n +" is not prime.");
+            break;
+        }
     }
+    if (d==n)
+        System.out.println(n +" is prime.");
+
 }
 }
