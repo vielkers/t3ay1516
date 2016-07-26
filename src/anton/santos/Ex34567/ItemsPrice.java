@@ -1,4 +1,4 @@
-package anton.santos.PurchaseOrder;
+package anton.santos.Ex34567;
 
 import java.util.HashMap;
 
@@ -8,6 +8,5 @@ import java.util.HashMap;
 public class ItemsPrice {
 
     public static HashMap<Integer, Float> ID= new HashMap<>();
-
 
 }
