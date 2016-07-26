@@ -1,4 +1,4 @@
-package aguirre.erika;
+package aguirre.erika.AguirreEx3;
 
 /**
  * Created by IE on 7/22/2016.
