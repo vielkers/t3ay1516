@@ -1,15 +1,13 @@
-package anton.santos.PurchaseOrder;
+package anton.santos.Ex34567;
 
 /**
  * Created by Anton on 6/17/2016.
  */
 public class Item {
-
     private int itemID;
     private String itemDesc;
     private String itemType;
     private float price;
-
 
     @Override
     public String toString() {

@@ -1,4 +1,4 @@
-package anton.santos.PurchaseOrder;
+package anton.santos.Ex34567;
 
 /**
  * Created by Anton on 6/17/2016.
@@ -10,14 +10,12 @@ public class PurchaseOrder {
     String [] UOM;
     Item [] box;
 
-
     public PurchaseOrder( int [] quantity, String [] UOM, Item [] box) {
         this.PONumber = count;
         this.quantity  = quantity;
         this.UOM = UOM;
         this.box = box;
         count ++;
-
 
     }
 

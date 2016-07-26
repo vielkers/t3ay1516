@@ -1,5 +1,4 @@
-package anton.santos.PurchaseOrder;
-import java.util.HashMap;
+package anton.santos.Ex34567;
 import java.util.Random;
 
 /**
@@ -7,8 +6,6 @@ import java.util.Random;
  */
 public class TotalPurchase {
     //Dictionary
-
-
 
     public static void main(String[] args) {
 
