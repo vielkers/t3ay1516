@@ -1,15 +1,27 @@
 package keith.lim.ex4;
 
 /**
- * Created by kiiiiibble on 7/20/2016.
+ * Created by kiiiiibble on 7/26/2016.
  */
-public class PO {
+public class PurchaseOrder {
     private int PONumber;
     private keith.lim.ex4.Item[] items;
     private float[] quantities;
     private String[] unitOfMeasure;
 
-    public PO(int PONumber, Item[] items, float[] quantities, String[] unitOfMeasure) {
+    public PurchaseOrder() {
+    }
+
+    public PurchaseOrder(int PONumber) {
+    }
+
+    public PurchaseOrder(int PONumber, Item[] items) {
+    }
+
+    public PurchaseOrder(int PONumber, Item[] items, float[] quantities) {
+    }
+
+    public PurchaseOrder(int PONumber, keith.lim.ex4.Item[] items, float[] quantities, String[] unitOfMeasure) {
         this.PONumber = PONumber;
         this.items = items;
         this.quantities = quantities;
@@ -24,11 +36,11 @@ public class PO {
         this.PONumber = PONumber;
     }
 
-    public Item[] getItems() {
+    public keith.lim.ex4.Item[] getItems() {
         return items;
     }
 
-    public void setItems(Item[] items) {
+    public void setItems(keith.lim.ex4.Item[] items) {
         this.items = items;
     }
 
@@ -55,4 +67,5 @@ public class PO {
         }
         return currentTotal;
     }
+
 }
