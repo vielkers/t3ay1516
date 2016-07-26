@@ -1,14 +1,13 @@
-package macavinta.gianninah;
+package macavinta.gianninah.ex2final;
 
-import java.util.Scanner;
 
 /**
  * Created by IE on 7/26/2016.
  */
-public class ex2new { public static void main(String args[]){
+public class ex2final { public static void main(String args[]){
     int n;
-    Scanner x = new Scanner(System.in);
-    System.out.println("Enter number: ");
+    scanner x = new scanner(System.in);
+    System.out.println("Enter  number! : ");
 
     n = x.nextInt();
 
