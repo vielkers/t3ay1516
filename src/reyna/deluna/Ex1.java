@@ -20,6 +20,7 @@ public class Ex1 {
         // Print the value of currentProduct
         System.out.println(m + "! = " + a);
 
+
         // Exercise 1.2
         System.out.println("\n\nEXERCISE 1.2");
 
