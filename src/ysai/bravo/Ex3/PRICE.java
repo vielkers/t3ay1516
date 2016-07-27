@@ -1,10 +1,9 @@
-package ysai.bravo;
+package ysai.bravo.Ex3;
 
 /**
- * Created by IE on 6/17/2016.
+ * Created by IE on 7/26/2016.
  */
 public class PRICE {
-
     public static void main(String[] args){
         // TODO: No matching constructor in ITEM class
         // ITEM cp = new ITEM(1, "phone", 12345.6f, "gadget", "pieces");
@@ -26,5 +25,4 @@ public class PRICE {
 
 
     }
-
 }
