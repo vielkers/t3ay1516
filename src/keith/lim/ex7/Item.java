@@ -1,48 +1,54 @@
 package keith.lim.ex7;
 
 public class Item {
+  private int id;
+  private String itemDescription;
+  private String itemType;
+  private float price;
 
-    int itemID;
-    String itemDesc;
-    String itemType;
-    float price;
-    float qty;
-    String uom;
+  public Item() {
+    this.id = 9999;
+    this.itemDescription = "item";
+    this.itemType = "item";
+    this.price = 100.00f;
+  }
 
-    public Item(int itemID, float qty) {
-        this.itemID = itemID;
-        this.qty = qty;
+  public Item(int id, String itemDescription, String itemType, float price) {
+    this.id = id;
+    this.itemDescription = itemDescription;
+    this.itemType = itemType;
+    this.price = price;
+  }
 
+  public int getId() {
+    return id;
+  }
 
-        if(this.itemID==1){
-            itemDesc = "Chihuahua";
-            itemType = "Dog";
-            price = 6000;
-            uom = "Box";
-        }
+  public void setId(int id) {
+    this.id = id;
+  }
 
-        if(this.itemID==2){
-            itemDesc = "Shark";
-            itemType = "Fish";
-            price = 20000;
-            uom = "Aquarium";
-        }
+  public String getItemDescription() {
+    return itemDescription;
+  }
 
-        if(this.itemID==3){
-            itemDesc = "Gerbil";
-            itemType = "Rodent";
-            price = 500;
-            uom = "Handful";
-        }
+  public void setItemDescription(String itemDescription) {
+    this.itemDescription = itemDescription;
+  }
 
-        else{
-            System.out.println("Please input an available item code:\n1 = Chihuahua\n2 = Shark\n3 = Gerbil");
-        }
-    }
+  public String getItemType() {
+    return itemType;
+  }
 
-    public static float getTotal (Item thing){
+  public void setItemType(String itemType) {
+    this.itemType = itemType;
+  }
 
-        float totPrice = thing.price*thing.qty;
-        return totPrice;
-    }
+  public float getPrice() {
+    return price;
+  }
+
+  public void setPrice(float price) {
+    this.price = price;
+  }
 }
