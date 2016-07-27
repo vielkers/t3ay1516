@@ -1,7 +1,7 @@
-package ysai.bravo;
+package ysai.bravo.Ex3;
 
 /**
- * Created by IE on 6/28/2016.
+ * Created by IE on 7/26/2016.
  */
 public class PO {
     private int PONumber;
