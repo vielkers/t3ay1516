@@ -1,9 +1,12 @@
+/*
 package macavinta.gianninah.ex2final;
 
 
+*/
 /**
  * Created by IE on 7/26/2016.
- */
+ *//*
+
 public class ex2final { public static void main(String args[]){
     int n;
     scanner x = new scanner(System.in);
@@ -23,3 +26,4 @@ public class ex2final { public static void main(String args[]){
     System.out.println(b[a]);
 }
 }
+*/
