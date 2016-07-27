@@ -3,7 +3,7 @@ package macavinta.gianninah.ex3new;
 /**
  * Created by IE on 7/26/2016.
  */
-public class Item {
+public class item {
     private int id;
     private String itemDescription;
     private String itemType;

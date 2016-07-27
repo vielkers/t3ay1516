@@ -12,7 +12,7 @@ public class shape {private String name;
         this.circle = circle;
     }
 
-    public Shape(String name, triangle triangle) {
+    public shape(String name, triangle triangle) {
         this.name = name;
         this.triangle = triangle;
     }

@@ -1,4 +1,7 @@
-package macavinta.gianninah.ex3new;
+// TODO: Fix errors
+
+
+/*package macavinta.gianninah.ex3new;
 
 public class purchaseorder {private int PONumber;
     private Item item;
@@ -45,4 +48,4 @@ public class purchaseorder {private int PONumber;
     public void setUnitOfMeasure(String unitOfMeasure) {
         this.unitOfMeasure = unitOfMeasure;
     }
-}
+}*/
