@@ -1,4 +1,4 @@
-package aranguren.bernadette;
+package aranguren.bernadette.Ex7;
 
 public class Company {
 
