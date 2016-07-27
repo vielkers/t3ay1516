@@ -1,6 +1,5 @@
 package reyna.deluna.Ex8;
 
-import reyna.deluna.Ex81.*;
 
 /**
  * Created by IE on 7/26/2016.
