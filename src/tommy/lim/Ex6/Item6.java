@@ -1,8 +1,10 @@
-package tommy.lim.Ex6;
+// TODO: Fix the errors
 
-/**
+/*package tommy.lim.Ex6;
+
+*//**
  * Created by IE on 7/26/2016.
- */
+ *//*
 public class Item6 {
     int itemid;
     String itemdescription;
@@ -55,4 +57,4 @@ public class Item6 {
         return totalprice;
     }
 
-}
+}*/

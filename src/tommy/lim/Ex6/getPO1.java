@@ -1,8 +1,13 @@
+// TODO: Fix the errors
+
+/*
 package tommy.lim.Ex6;
 
+*/
 /**
  * Created by IE on 7/26/2016.
- */
+ *//*
+
 public class getPO1 {
     private int ponumber;
     private Company vendor;
@@ -65,3 +70,4 @@ public class getPO1 {
         return POTotal;
     }
 }
+*/
