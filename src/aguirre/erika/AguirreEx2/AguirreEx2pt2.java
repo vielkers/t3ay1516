@@ -1,4 +1,4 @@
-package aguirre.erika;
+package aguirre.erika.AguirreEx2;
 
 // Exercise 2.2
 // Implement a primality test of numbers from 2 to maxNumber

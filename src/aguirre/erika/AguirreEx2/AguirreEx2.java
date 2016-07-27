@@ -1,4 +1,4 @@
-package aguirre.erika;
+package aguirre.erika.AguirreEx2;
 
 // Exercise 2.1
 // Implement fibonacci sequence
