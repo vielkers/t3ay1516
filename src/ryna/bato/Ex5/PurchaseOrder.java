@@ -1,11 +1,5 @@
 package ryna.bato.Ex5;
 
-<<<<<<< HEAD
-/**
- * Created by Admin on 7/26/2016.
- */
-public class PurchaseOrder {
-=======
 public class PurchaseOrder {
     public int poNumber = 1234;
 
@@ -59,5 +53,4 @@ public class PurchaseOrder {
     public void setUom(String[] uom) {
         this.uom = uom;
     }
->>>>>>> 547180dea152c1c8037d6708df5c0d5c870b2ddd
 }

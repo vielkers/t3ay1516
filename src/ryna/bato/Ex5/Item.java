@@ -1,11 +1,5 @@
 package ryna.bato.Ex5;
 
-<<<<<<< HEAD
-/**
- * Created by Admin on 7/26/2016.
- */
-public class Item {
-=======
 public class Item {
     /*
     private int id;
@@ -64,5 +58,4 @@ public class Item {
     public void setPrice(float price) {
         this.price = price;
     }
->>>>>>> 547180dea152c1c8037d6708df5c0d5c870b2ddd
 }
