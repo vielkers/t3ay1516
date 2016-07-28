@@ -5,7 +5,8 @@ package ysai.bravo.Ex4;
  */
 public class price {
     public static void main(String[] args) {
-        item cp = new item(1, "funko pop", 595.f, "toy", "pieces");
+        // TODO: Fix errors
+        /*item cp = new item(1, "funko pop", 595.f, "toy", "pieces");
 
         po cp1 = new po(32131241, 412f);
 
@@ -16,7 +17,7 @@ public class price {
         //System.out.println("UOM: " + cp.get());
 
         System.out.println("PO Number: " + cp1.getPONumber());
-        System.out.println("Quantity: " + cp1.getQuantities());
+        System.out.println("Quantity: " + cp1.getQuantities());*/
 
 
     }
