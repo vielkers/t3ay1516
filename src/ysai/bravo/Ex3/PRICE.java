@@ -5,7 +5,7 @@ package ysai.bravo.Ex3;
  */
 public class PRICE {
     public static void main(String[] args){
-        ITEM cp = new ITEM(1, "phone", 12345.6f, "gadget", "pieces");
+        ITEM cp = new ITEM(1, "funko pop", 595.f, "toy", "pieces");
 
         PO cp1 = new PO(32131241, 412f);
 
