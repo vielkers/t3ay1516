@@ -2,9 +2,11 @@
 
 package martina.martinez;
 
+import java.util.Scanner;
+
 public class Ex1 {
     public static void main(String[] args) {
-        //Ex1.1
+
         int n = Integer.parseInt(args[0]);
         int m = n;
 
@@ -21,6 +23,9 @@ public class Ex1 {
             System.out.println(m + "! = " + a);
         }
 
+
+
+            }
+
     }
-}
 
