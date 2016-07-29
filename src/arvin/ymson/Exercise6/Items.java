@@ -1,4 +1,4 @@
-package arvin.ymson;
+package arvin.ymson.Exercise6;
 
 /**
  * Created by arvin_000 on 6/28/2016.
