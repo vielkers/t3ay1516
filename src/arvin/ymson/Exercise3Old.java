@@ -3,12 +3,12 @@ package arvin.ymson;
 /**
  * Created by arvin_000 on 6/17/2016.
  */
-public class Exercise3 {
+public class Exercise3Old {
 
     private String name;
     private double price;
 
-    public Exercise3(String name, double price){
+    public Exercise3Old(String name, double price){
         this.name = name;
         this.price = price;
     }
@@ -30,7 +30,7 @@ public class Exercise3 {
     }
 
     public static void main(String[] args){
-        Exercise3 ariel = new Exercise3("Ariel", 7.50);
+        Exercise3Old ariel = new Exercise3Old("Ariel", 7.50);
         System.out.println("Name: " + ariel.getName());
         System.out.println("Price: " + ariel.getPrice());
     }
