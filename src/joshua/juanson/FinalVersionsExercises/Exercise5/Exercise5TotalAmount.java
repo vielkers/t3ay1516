@@ -1,6 +1,7 @@
 package joshua.juanson.FinalVersionsExercises.Exercise5;
 
-public class Exercise5TotalAmount {
+public class Exercise5TotalAmount
+{
     public static void main(String args[]) {
         int i = 1;
         int purchaseNumber = 1, numberOfUnits = 1;

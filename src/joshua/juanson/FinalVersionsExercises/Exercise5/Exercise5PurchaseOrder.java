@@ -1,6 +1,7 @@
 package joshua.juanson.FinalVersionsExercises.Exercise5;
 
-public class Exercise5PurchaseOrder {
+public class Exercise5PurchaseOrder
+{
         private int purchaseNumber;
         private String date;
         private Exercise5Item [] item;
