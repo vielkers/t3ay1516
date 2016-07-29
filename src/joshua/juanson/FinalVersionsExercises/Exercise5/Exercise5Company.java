@@ -1,6 +1,7 @@
 package joshua.juanson.FinalVersionsExercises.Exercise5;
 
-public class Exercise5Company {
+public class Exercise5Company
+{
     private int refNumber;
     private String companyName;
     private String companyAddress;

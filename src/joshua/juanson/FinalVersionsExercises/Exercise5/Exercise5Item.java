@@ -1,6 +1,7 @@
 package joshua.juanson.FinalVersionsExercises.Exercise5;
 
-public class Exercise5Item {
+public class Exercise5Item
+{
     private int itemID;
     private String itemDesc;
     private String itemType;
