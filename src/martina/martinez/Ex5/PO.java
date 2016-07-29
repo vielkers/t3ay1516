@@ -23,11 +23,11 @@ public class PO {
         this.quantities = quantities;
         this.unitOfMeasure = unitOfMeasure;
     }
-    // TODO: Fix this (These should be inside methods)
-    /*
+    //TODO: Fix this (These should be inside methods)
+
     hm.put(nth,1001);
     System.out.println(hm.get.nth);
-    */
+
     public int getPONumber() {
         return PONumber;
     }
@@ -80,7 +80,7 @@ public class PO {
         float currentTotal = 0;
         for (int i = 0; i < items.length; i++) {
             currentTotal += items[i].getPrice() * quantities[i];
-                        //hm.get(items[i].getId())
+                        hm.get(items[i].getId())
         }
         return currentTotal;
     }
