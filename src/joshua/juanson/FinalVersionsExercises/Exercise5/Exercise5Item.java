@@ -7,7 +7,8 @@ public class Exercise5Item
     private String itemType;
     private float price;
     private int quantity;
-    public Exercise5Item(int itemID, String itemDesc, String itemType, float price, int quantity) {
+    public Exercise5Item(int itemID, String itemDesc, String itemType, float price, int quantity)
+    {
         this.itemID = itemID;
         this.itemDesc = itemDesc;
         this.itemType = itemType;

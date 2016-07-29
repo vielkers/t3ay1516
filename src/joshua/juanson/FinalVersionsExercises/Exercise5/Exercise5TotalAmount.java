@@ -9,8 +9,9 @@ public class Exercise5TotalAmount
         String date = "March 5, 2015";
         Exercise5Item item = new Exercise5Item(1, "Item Description", "Item Type", 1f, 1);
         Exercise5Company vendor = new Exercise5Company(1,"JAT Board Enterprises","Calumpang, Marikina City", "682-33-66");
-        System.out.println("");
-        System.out.println("PURCHASE ORDER");
+            System.out.println("");
+            System.out.println("PURCHASE ORDER");
+            System.out.println("");
             System.out.println("Company Ref No.: " + vendor.getRefNumber());
             System.out.println("Company Name: " +vendor.getCompanyName());
             System.out.println("Company Address: " + vendor.getCompanyAddress());

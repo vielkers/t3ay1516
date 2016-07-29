@@ -55,8 +55,7 @@ public class Exercise5PurchaseOrder
     public void setDate (String date){
         this.date = date;
     }
-    public float getTotalAmount()
-    {
+    public float getTotalAmount() {
         float currentTotalAmount = 0;
         for (int current = 0; current < item.length; current++)
         {
