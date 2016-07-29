@@ -20,7 +20,8 @@ public class Exercise5PurchaseOrder
     public int getPurchaseNumber()
     {
         return purchaseNumber;
-    }public Exercise5Item [] item()
+    }
+    public Exercise5Item [] item()
     {
         return item;
     }
