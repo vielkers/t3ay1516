@@ -1,5 +1,4 @@
 package joshua.juanson.FinalVersionsExercises.Exercise5;
-
 public class Exercise5Company
 {
     private int refNumber;
@@ -10,7 +9,7 @@ public class Exercise5Company
     {
         this.refNumber = 0;
         this.companyName = "JAT Board Enterprises";
-        this.companyAddress = "Calumpang, Marikina City";
+        this.companyAddress = "Marikina City";
         this.companyContact = "682-33-66";
     }
     public Exercise5Company (int refNumber, String companyName, String companyAddress, String companyContact)

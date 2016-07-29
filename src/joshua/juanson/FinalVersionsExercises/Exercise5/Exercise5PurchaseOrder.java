@@ -1,5 +1,4 @@
 package joshua.juanson.FinalVersionsExercises.Exercise5;
-
 public class Exercise5PurchaseOrder
 {
         private int purchaseNumber;

@@ -1,5 +1,4 @@
 package joshua.juanson.FinalVersionsExercises.Exercise5;
-
 public class Exercise5Item
 {
     private int itemID;
@@ -22,44 +21,33 @@ public class Exercise5Item
         this.price = 0;
         this.quantity = 0;
     }
-
     public int getItemID() {
         return itemID;
     }
-
     public String getItemDesc() {
         return itemDesc;
     }
-
     public String getItemType() {
         return itemType;
     }
-
     public float getPrice() {
         return price;
     }
-
     public int getQuantity() {
         return quantity;
     }
-
-
     public void setItemID(int itemID) {
         this.itemID = itemID;
     }
-
     public void setItemDesc(String itemDesc) {
         this.itemDesc = itemDesc;
     }
-
     public void setItemType(String itemType) {
         this.itemType = itemType;
     }
-
     public void setPrice(float price) {
         this.price = price;
     }
-
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
