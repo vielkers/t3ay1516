@@ -16,11 +16,11 @@ public class Exercise5PurchaseOrder
             this.numberOfUnits = numberOfUnits;
             this.unitOfMeasure = unitOfMeasure;
         }
+    //Different methods
     public int getPurchaseNumber()
     {
         return purchaseNumber;
-    }
-    public Exercise5Item [] item()
+    }public Exercise5Item [] item()
     {
         return item;
     }

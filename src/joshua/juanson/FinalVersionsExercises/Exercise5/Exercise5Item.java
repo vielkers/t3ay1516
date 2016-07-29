@@ -13,14 +13,14 @@ public class Exercise5Item
         this.itemType = itemType;
         this.price = price;
         this.quantity = quantity;
-    }
-    public Exercise5Item(){
+    }public Exercise5Item(){
         this.itemID = 0;
         this.itemDesc = "Null";
         this.itemType = "Null";
         this.price = 0;
         this.quantity = 0;
     }
+    //Different Methods
     public int getItemID() {
         return itemID;
     }
