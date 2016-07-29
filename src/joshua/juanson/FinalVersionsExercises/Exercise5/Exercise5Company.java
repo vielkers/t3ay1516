@@ -44,8 +44,7 @@ public class Exercise5Company
     {
         this.companyAddress=companyAddress;
     }
-    public String getCompanyContact()
-    {
+    public String getCompanyContact() {
         return companyContact;
     }
     public void setCompanyContact (String companyContact)
