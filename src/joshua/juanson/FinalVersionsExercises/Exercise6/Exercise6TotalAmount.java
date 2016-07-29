@@ -33,6 +33,7 @@ public class Exercise6TotalAmount {
         System.out.println("Item Price: PHP " + item.getPrice());
         System.out.println("Item Quantity: " + item.getQuantity());
         System.out.println("");
+        System.out.println("The latest PO number is: " + PO.latestPurchaseOrder());
         //System Outputs Total Price of PO
         System.out.println("TOTAL AMOUNT IS: PHP " + item.getPrice() * PO.getNumberOfUnits());
     }
