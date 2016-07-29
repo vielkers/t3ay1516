@@ -11,7 +11,8 @@ public class Exercise5Company
         this.companyName = "JAT Board Enterprises";
         this.companyAddress = "Marikina City";
         this.companyContact = "682-33-66";
-    }public Exercise5Company (int refNumber, String companyName, String companyAddress, String companyContact)
+    }
+    public Exercise5Company (int refNumber, String companyName, String companyAddress, String companyContact)
     {
         this.refNumber=refNumber;
         this.companyName=companyName;

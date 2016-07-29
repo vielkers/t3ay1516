@@ -2,8 +2,7 @@ package joshua.juanson.FinalVersionsExercises.Exercise5;
 public class Exercise5TotalAmount
 {
     public static void main(String args[]) {
-        int i = 1;
-        int purchaseNumber = 1, numberOfUnits = 1;
+        int i = 1, purchaseNumber = 1, numberOfUnits = 1;
         String unitOfMeasure  = "pcs", date = "March 5, 2015";
         Exercise5Item item = new Exercise5Item(1, "Item Description", "Item Type", 1f, 1);
         Exercise5Company vendor = new Exercise5Company(1,"JAT Board Enterprises","Marikina City", "682-33-66");
