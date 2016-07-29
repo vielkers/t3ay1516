@@ -1,4 +1,4 @@
-package tommy.lim;
+package tommy.lim.Ex3;
 
 /**
  * Created by IE on 6/7/2016.
