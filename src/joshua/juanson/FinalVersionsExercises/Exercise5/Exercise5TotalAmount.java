@@ -1,5 +1,4 @@
 package joshua.juanson.FinalVersionsExercises.Exercise5;
-
 public class Exercise5TotalAmount
 {
     public static void main(String args[]) {
@@ -8,7 +7,7 @@ public class Exercise5TotalAmount
         String unitOfMeasure  = "pcs";
         String date = "March 5, 2015";
         Exercise5Item item = new Exercise5Item(1, "Item Description", "Item Type", 1f, 1);
-        Exercise5Company vendor = new Exercise5Company(1,"JAT Board Enterprises","Calumpang, Marikina City", "682-33-66");
+        Exercise5Company vendor = new Exercise5Company(1,"JAT Board Enterprises","Marikina City", "682-33-66");
             System.out.println("");
             System.out.println("PURCHASE ORDER");
             System.out.println("");
