@@ -1,13 +1,14 @@
 package tommy.lim.UI;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
  * Created by IE on 7/14/2016.
  */
-public class Exercise extends JFrame{
+public class Exercise extends JFrame {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Exercise");
         frame.setContentPane(new Exercise().Exercise);
