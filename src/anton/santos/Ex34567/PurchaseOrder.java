@@ -8,16 +8,16 @@ import java.util.ArrayList;
 public class PurchaseOrder {
     public static int count = 1000;
     int  PONumber;
-    int [] quantity ;
+    ArrayList<Integer> quantity;
     String [] UOM;
     Item [] box;
     Company [] vendor;
 
-    public PurchaseOrder( int [] quantity, String [] UOM, Item [] box,Company [] vendor) {
+    public PurchaseOrder( ArrayList<Integer> quantity , String [] UOM, Item [] box,Company [] vendor) {
         this.PONumber = count;
         this.quantity  = quantity;
         this.UOM = UOM;
-        this.box = box;
+        this.box=box;
         this.vendor = vendor;
         count ++;
 

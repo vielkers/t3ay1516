@@ -43,12 +43,16 @@ public class TotalPurchase {
         Company IBM = new Company(3,"IBM","Stringy Park","477-29-59");
 
         //PurchaseOrder
-        int[] qarray = {3,5,7,4};
+       ArrayList<Integer> quant = new ArrayList<>();
+        for (int m =0;m<4;m++) {
+            quant.add(new Integer(m));
+        }
+        int [] qarray = {0,1,2,3,4};
         String [] zarray = {"boxes", "bars","wraps" ,"bottles"};
         Item [] narray = {safeguard, kitkat, twinkies, coke};
         Company [] carray = {Nestle, Unilever, Shell, IBM};
-        PurchaseOrder First = new PurchaseOrder(qarray,zarray,narray,carray);
-        PurchaseOrder Second = new PurchaseOrder(qarray,zarray,narray,carray);
+        PurchaseOrder First = new PurchaseOrder(quant,zarray,narray,carray);
+        PurchaseOrder Second = new PurchaseOrder(quant,zarray,narray,carray);
         //First.PONumber = 1001;
 
         int Total = 0;
@@ -64,11 +68,11 @@ public class TotalPurchase {
 
         for(int z=0;z<4;z++){
             //Quantity and Item Desc
-            System.out.print(First.quantity[z]+" "+First.UOM[z]+" of ");
+            System.out.print(quant.get(z)+" "+First.UOM[z]+" of ");
             System.out.print("(" + ItemsPrice.ID.keySet().toArray()[z]+")");
             //Price Calculation
 
-            System.out.println(First.box[z].getItemDesc()+" = Php "+ First.quantity[z]*ItemsPrice.ID.get(z));
+            System.out.println(First.box[z].getItemDesc()+" = Php "+ quant.get(z)*ItemsPrice.ID.get(z));
             //System.out.println(First.box[i].getItemDesc()+" = Php "+ First.quantity[i]*First.box[i].getPrice());
 
 
@@ -76,7 +80,7 @@ public class TotalPurchase {
             //sum = First.quantity[i]*First.box[i].getPrice();
 
 
-            sum = First.quantity[z]*ItemsPrice.ID.get(z);
+            sum = quant.get(z)*ItemsPrice.ID.get(z);
             total = total + sum;
         }
 
@@ -89,7 +93,6 @@ public class TotalPurchase {
         } else System.out.print("This is not the latest PO");
 
     }
-
 
 
 
