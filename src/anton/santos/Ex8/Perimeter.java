@@ -5,4 +5,5 @@ package anton.santos.Ex8;
  */
 public interface Perimeter {
     public double getPeri();
+
 }

@@ -39,4 +39,5 @@ public class Company {
     public String getVendorphone() {
         return vendorphone;
     }
+
 }

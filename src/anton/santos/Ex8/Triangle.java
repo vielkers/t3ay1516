@@ -35,4 +35,5 @@ public class Triangle extends Shape implements Perimeter {
     public void setS3(float s3){
         this.s3=s3;
     }
+
 }
