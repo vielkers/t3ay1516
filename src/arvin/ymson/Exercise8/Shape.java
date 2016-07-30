@@ -7,19 +7,16 @@ public class Shape {
 
     private String name;
     private String color;
+    private float perimeter;
 
-    public Shape(String name, String color){
-        this.name = name;
-        this.color = color;
+
+
+    public float getPerimeter() {
+        return perimeter;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-
+    public void setPerimeter(float perimeter) {
+        this.perimeter = perimeter;
     }
 
     public String getColor() {
@@ -29,6 +26,7 @@ public class Shape {
     public void setColor(String color) {
         this.color = color;
     }
+
 
 
         }
