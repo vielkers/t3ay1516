@@ -5,6 +5,7 @@ package arvin.ymson.Complete;
  */
 public interface PerimeterInterface {
 
-    public int computePerimeter();
+    public float computePerimeter();
+
 
 }
