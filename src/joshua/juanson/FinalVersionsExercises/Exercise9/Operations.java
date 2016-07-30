@@ -10,7 +10,8 @@ public class Operations {
 
     public static String Prime(Integer args) {
         String p = "";
-        int primenumber, r, maxNumber = args;
+        int primenumber, r;
+        int maxNumber = args;
         for (int o = 0; o <= args; o++) {
             primenumber = o;
             for (r = 2; r <= (o - 1); o++) ;
@@ -18,6 +19,9 @@ public class Operations {
                 if (o % r == 0) {
                     primenumber = 0;
                 }
+            }
+            if (primenumber != 0) {
+                p = p + "\n" + primenumber;
             }
         }
         return p;

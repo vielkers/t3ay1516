@@ -3,10 +3,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-public class Exercise9GUI {
+public class Exercise9GUI extends JFrame {
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Exercise 9");
+        JFrame frame = new JFrame("Exercise");
         frame.setContentPane(new Exercise9GUI().Exercise9GUI);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
@@ -14,9 +13,9 @@ public class Exercise9GUI {
     }
 
     private JPanel Exercise9GUI;
-    private JButton factorialButton;
-    private JButton fibonacciSequenceButton;
     private JButton primalityTestButton;
+    private JButton fibonacciSequenceButton;
+    private JButton factorialButton;
     private JTextField textField1;
 
     public Exercise9GUI() {
@@ -24,7 +23,9 @@ public class Exercise9GUI {
             @Override
             public void actionPerformed(ActionEvent e) {
                 int parsedInput = Integer.parseInt(textField1.getText());
+
                 long fact = Operations.Factorial(parsedInput);
+
                 JOptionPane.showMessageDialog(null, "" + fact, "Answer", JOptionPane.INFORMATION_MESSAGE);
             }
         });
@@ -33,9 +34,9 @@ public class Exercise9GUI {
             public void actionPerformed(ActionEvent e) {
                 int parsedInput = Integer.parseInt(textField1.getText());
 
-                String prm = Operations.Prime(parsedInput);
+                String primenumber = Operations.Prime(parsedInput);
 
-                JOptionPane.showMessageDialog(null, "" + prm, "Answer", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "" + primenumber, "Answer", JOptionPane.INFORMATION_MESSAGE);
             }
         });
         fibonacciSequenceButton.addActionListener(new ActionListener() {
@@ -50,5 +51,5 @@ public class Exercise9GUI {
         });
     }
 
-}
 
+}
