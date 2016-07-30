@@ -1,4 +1,4 @@
-package matthew.reyes.Exercise5;
+package matthew.reyes.Exercise6;
 
 /**
  * Created by victorreyes on 29/07/2016.
