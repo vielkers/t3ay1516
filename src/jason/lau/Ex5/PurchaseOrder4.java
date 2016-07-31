@@ -1,48 +1,43 @@
 package jason.lau.Ex5;
 
-import jason.lau.Ex3.Items;
+import jason.lau.Ex5.Items;
 
 /**
  * Created by Jason on 6/7/2016.
  */
+
 public class PurchaseOrder4 {
-    float ponum;
-    int [] quan;
-    String [] uom;
 
-    Items [] cases;
+    private int ponum;
+    private String date;
+    private Items [] cases;
+    private Company vendor;
+    private float [] quantity;
+    private String [] uom;
 
-    public PurchaseOrder4(float ponum, int[] quan, String[] uom, Items [] cases) {
+    public PurchaseOrder4(int ponum, String date, Items[] cases, Company vendor, float[] quantity, String[] uom) {
         this.ponum = ponum;
-        this.quan = quan;
-        this.uom = uom;
+        this.date = date;
         this.cases = cases;
+        this.vendor = vendor;
+        this.quantity = quantity;
+        this.uom = uom;
     }
 
-    public String Date = "July 1, 2016";
-
-    public float getPonum() {
+    public int getPonum() {
         return ponum;
     }
 
-    public void setPonum(float ponum) {
+    public void setPonum(int ponum) {
         this.ponum = ponum;
     }
 
-    public int[] getQuan() {
-        return quan;
+    public String getDate() {
+        return date;
     }
 
-    public void setQuan(int[] quan) {
-        this.quan = quan;
-    }
-
-    public String[] getUom() {
-        return uom;
-    }
-
-    public void setUom(String[] uom) {
-        this.uom = uom;
+    public void setDate(String date) {
+        this.date = date;
     }
 
     public Items[] getCases() {
@@ -53,11 +48,36 @@ public class PurchaseOrder4 {
         this.cases = cases;
     }
 
-    public String getDate() {
-        return Date;
+    public Company getVendor() {
+        return vendor;
     }
 
-    public void setDate(String date) {
-        Date = date;
+    public void setVendor(Company vendor) {
+        this.vendor = vendor;
+    }
+
+    public float[] getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(float[] quantity) {
+        this.quantity = quantity;
+    }
+
+    public String[] getUom() {
+        return uom;
+    }
+
+    public void setUom(String[] uom) {
+        this.uom = uom;
+    }
+
+    public float POTotal() {
+        float Total = 0;
+        for (int i = 0; i < cases.length; i++)
+        {
+            Total += cases[i].getPrice()*quantity[i];
+        }
+        return Total;
     }
 }

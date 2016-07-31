@@ -2,7 +2,7 @@ package jason.lau.Ex7;
 
 import jason.lau.Ex3.Items;
 import jason.lau.Ex3.PurchaseOrder;
-import jason.lau.Ex7.Company;
+import jason.lau.Ex5.Company;
 
 import java.util.ArrayList;
 
@@ -18,11 +18,34 @@ public class CompanyPO {
         int PONUM = 123;
 
 //Company
-        int[] ID = new int[]{1001, 1002, 1003, 1004, 1005};
-        String[] Name = new String[]{"Unilever", "Nestle", "URC", "San Miguel", "P&G"};
-        String[] Add = new String[]{"Paco", "Makati", "Ortigas", "Bulacan", "Fort"};
-        String[] Num = new String[]{"12345", "67890", "45678", "12390", "26673"};
-        Company Jason = new Company(ID, Name,Add, Num);
+
+        ArrayList<Integer> ID = new ArrayList<Integer>();
+        ID.add(1001);
+        ID.add(1002);
+        ID.add(1003);
+        ID.add(1004);
+        ID.add(1005);
+
+        ArrayList<String> Name = new ArrayList<String>();
+        Name.add("Unilever");
+        Name.add("Nestle");
+        Name.add("URC");
+        Name.add("San Miguel");
+        Name.add("P&G");
+
+        ArrayList<String> Add = new ArrayList<String>();
+        Add.add("Paco");
+        Add.add("Makati");
+        Add.add("Ortigas");
+        Add.add("Bulacan");
+        Add.add("Fort");
+
+        ArrayList<String> Num = new ArrayList<String>();
+        Num.add("1234567");
+        Num.add("9876543");
+        Num.add("6249284");
+        Num.add("1013471");
+        Num.add("7351045");
 
 //PO
         ArrayList<String> cases = new ArrayList<String>();
@@ -91,7 +114,7 @@ public class CompanyPO {
         for(j = 0; j < 5; j++){
 
             System.out.printf("%-10s %-13s %-10s %-10s %-10s %-14s %-12s %-10s %-12s %-10s %-10s \n",
-                    ID[j], Name[j], Add[j], Num[j], id.get(j), desc.get(j),
+                    ID.get(j), Name.get(j), Add.get(j), Num.get(j), id.get(j), desc.get(j),
                     type.get(j), uom.get(j), price.get(j), quan.get(j), price.get(j)*quan.get(j));
         }
 
