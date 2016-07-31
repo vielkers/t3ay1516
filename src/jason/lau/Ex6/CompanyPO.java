@@ -1,6 +1,5 @@
 package jason.lau.Ex6;
 
-import jason.lau.Ex5.Company;
 import jason.lau.Ex3.Items;
 /**
  * Created by Jason on 6/10/2016.
