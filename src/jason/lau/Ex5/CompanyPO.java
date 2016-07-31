@@ -10,9 +10,9 @@ import jason.lau.Ex5.PurchaseOrder4;
 public class CompanyPO {
 
     public static void main(String args[]) {
-        int i = 1, ponum = 1111, quantity = 4;
-        String uom  = "pcs", Date = "July 1, 2016";
-        Items cases = new Items(1111, "Item Description", "Item Type", 947f, 4);
+        int ponum = 1111, quantity = 4;
+        String uom  = "Bottles", Date = "July 1, 2016";
+        Items cases = new Items(1523, "Dove", "Shampoo", 247f, 4);
         Company vendor = new Company(1001,"Lau Incorporated","Taft Avenue, Manila, Philippines", "812-52-62");
 
         System.out.println("--------------------------------------------");
