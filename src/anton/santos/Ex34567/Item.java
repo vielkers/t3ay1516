@@ -25,7 +25,6 @@ public class Item {
         this.itemType = itemType;
         this.price = price;
 
-
     }
 
     public int getItemID() {
@@ -43,5 +42,6 @@ public class Item {
     public float getPrice() {
         return price;
     }
+
 
 }
