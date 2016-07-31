@@ -1,28 +1,18 @@
 package joshua.juanson.FinalVersionsExercises.Exercise8;
+public class Circle extends Shape implements Perimeter {
 
-public class Circle
-{
-    private float radius;
-    private float pi;
-    public Circle (float radius, float pi)
-    {
-        this.radius = radius;
-        this.pi = 3.14f;
-    }
-    public float getRadius()
-    {
-        return radius;
+    double r;
+    double pie = 3.1416;
+
+    @Override
+    public double getPerimeter() {
+        double perimeter = 2 * pie * r;
+        return perimeter;
     }
 
-    public void setRadius(float radius) {
-        this.radius = radius;
-    }
-
-    public float getPi() {
-        return pi;
-    }
-
-    public void setPi(float pi) {
-        this.pi = pi;
+    public Circle(float x, float y, double r, double pie) {
+        super(x, y);
+        this.r = r;
+        this.pie = pie;
     }
 }

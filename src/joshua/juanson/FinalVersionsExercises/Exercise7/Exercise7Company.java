@@ -1,53 +1,47 @@
 package joshua.juanson.FinalVersionsExercises.Exercise7;
 public class Exercise7Company {
-    private int refNumber;
-    private String companyName;
-    private String companyAddress;
-    private String companyContact;
-    public Exercise7Company ()
-    {
-        this.refNumber = 0;
-        this.companyName = "JAT Board Enterprises";
-        this.companyAddress = "Marikina City";
-        this.companyContact = "682-33-66";
+
+    private int[] CoId = new int[]{112, 113, 114, 115, 116};
+    private String[] CoName = new String[]{"Pikachu Corp.", "Squirtle Corp.", "Bulbasaur Corp.", "Charmander Corp.", "Pidgey Corp."};
+    private String[] address = new String[]{"Japan", "Los Angeles", "Philippines", "Antartica", "Heaven"};
+    private String[] phone = new String[]{"222222", "3333333", "4444444", "5555555", "9129404759834"};
+
+    public Exercise7Company(int[] id, String[] name, String[] address, String[] phone) {
+        this.CoId = id;
+        this.CoName = name;
+        this.address = address;
+        this.phone = phone;
     }
-    public Exercise7Company (int refNumber, String companyName, String companyAddress, String companyContact)
-    {
-        this.refNumber=refNumber;
-        this.companyName=companyName;
-        this.companyAddress=companyAddress;
-        this.companyContact=companyContact;
+
+    public int[] getCoId() {
+        return CoId;
     }
-    //Different Methods
-    public int getRefNumber()
-    {
-        return refNumber;
+
+    public void setCoId(int[] coId) {
+        this.CoId = coId;
     }
-    public void setRefNumber (int refNumber)
-    {
-        this.refNumber=refNumber;
+
+    public String[] getName() {
+        return CoName;
     }
-    public String getCompanyName()
-    {
-        return companyName;
+
+    public void setName(String[] name) {
+        this.CoName = name;
     }
-    public void setCompanyName (String companyName)
-    {
-        this.companyName=companyName;
+
+    public String[] getAddress() {
+        return address;
     }
-    public String getCompanyAddress()
-    {
-        return companyAddress;
+
+    public void setAddress(String[] address) {
+        this.address = address;
     }
-    public void setCompanyAddress(String companyAddress)
-    {
-        this.companyAddress=companyAddress;
+
+    public String[] getPhone() {
+        return phone;
     }
-    public String getCompanyContact() {
-        return companyContact;
-    }
-    public void setCompanyContact (String companyContact)
-    {
-        this.companyContact=companyContact;
+
+    public void setPhone(String[] phone) {
+        this.phone = phone;
     }
 }
