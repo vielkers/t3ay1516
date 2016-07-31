@@ -5,6 +5,7 @@ package arvin.ymson.Exercise8;
  */
 public interface PerimeterInterface {
 
-    public int computePerimeter();
+    public float computePerimeter();
+
 
 }
