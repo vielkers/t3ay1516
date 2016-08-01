@@ -3,36 +3,25 @@ package carvajal.vielka.Ex8;
 /**
  * Created by IE on 7/28/2016.
  */
-public class Shape {private String name;
-    private Circle circle;
-    private Triangle triangle;
+public class Shape {
+    private float ar;
+    private String name;
 
-    public Shape(String name, Circle circle) {
+
+    public float getAr() {
+        return ar;
+    }
+
+    public void setAr(float a) {
+        this.ar = ar;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
         this.name = name;
-        this.circle = circle;
-    }
-
-    public Shape(String name,Triangle triangle){
-        this.name = name;
-        this.triangle = triangle;
-    }
-
-    public float getArea() {
-        if( circle.IsUnitCircle() == true) {
-            return 22 / 7 * circle.getRadius() * circle.getRadius();
-        }
-        else {
-            return 1 / 2 * triangle.getBase() * triangle.getHeight();
-        }
-    }
-
-    public float getPerimeter() {
-        if( circle.IsUnitCircle() == true) {
-            return 2 * 22 / 7 * circle.getRadius();
-        }
-        else {
-            return triangle.getBase() + 2 * triangle.getSide();
-        }
     }
 }
 

@@ -3,45 +3,38 @@ package carvajal.vielka.Ex8;
 /**
  * Created by IE on 7/28/2016.
  */
-public class Triangle {private boolean isUnitCircle;
-    private float side;
-    private float height;
-    private float base;
-
-    public Triangle(float side, float height, float base) {
-        this.isUnitCircle = false;
-        this.side = side;
-        this.height = height;
-        this.base = base;
+public class Triangle extends Shape implements Perimeter{
+    private float a;
+    private float b;
+    private float c;
 
 
+    public float getA() {
+        return a;
     }
 
-    public boolean IsUnitCircle() {
-        return isUnitCircle;
+    public void setA(float a) {
+        this.a = a;
     }
 
-    public float getSide() {
-        return side;
+    public float getB() {
+        return b;
     }
 
-    public void setZ(float side) {
-        this.side = side;
-    }
-    public float getHeight() {
-        return height;
+    public void setB(float b) {
+        this.b = b;
     }
 
-    public void setHeight(float height) {
-        this.height = height;
+    public float getC() {
+        return c;
     }
 
-
-    public float getBase() {
-        return base;
+    public void setC(float c) {
+        this.c = c;
     }
 
-    public void setBase(float base) {
-        this.base = base;
+    @Override
+    public float getPerimeter() {
+        return (a + b + c);
     }
 }
