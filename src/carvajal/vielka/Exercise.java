@@ -25,7 +25,6 @@ public class Exercise {
                 for (i = 2; i < count; ++i)
                 {
                     n3 = n1 + n2;
-                    //System.out.println(n3);
                     fiboOutput = fiboOutput + "\n" + n3;
                     n1 = n2;
                     n2 = n3;
@@ -38,26 +37,24 @@ public class Exercise {
         Prime.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int Pri = Integer.parseInt(Field2.getText());
-                int maxNumber = Pri;
-                System.out.println("");
-                System.out.println("");
-                System.out.println("Prime Number " +maxNumber);
-                for (int l = 1; l<maxNumber; l++) {
-                    boolean isPrimeNumber = true;
-                    for (int j = 2; j < l; j++) {
-                        if (l % j == 0) {
-                            isPrimeNumber = false;
+                int parsedInput = Integer.parseInt(Field2.getText());
+                int maxNumber = parsedInput;
+                String s = "";
+                int x, y;
+                int prime = 0;
+                for (x = 1; x <= maxNumber; ++x) {
+                    prime = x;
+                    for (y = 2; y < x; y++) {
+                        if (x % y == 0) {
+                            prime = 0;
                         }
                     }
-                    if (isPrimeNumber) {
-                        System.out.print(l + " ");
-
+                    if (prime != 0) {
+                        s = s + "\n" + prime;
                     }
+
                 }
-
-
-                    JOptionPane.showMessageDialog(null, "" + maxNumber, "Prime Answer", JOptionPane.PLAIN_MESSAGE);
+                JOptionPane.showMessageDialog(null, ""+ s, "Prime Answer", JOptionPane.PLAIN_MESSAGE);
             }
         });
         Factorial.addActionListener(new ActionListener() {
